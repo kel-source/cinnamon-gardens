@@ -6,6 +6,18 @@ body {
   background-color: #fdfeff;
 }
 
+footer {
+  max-width: 98%;
+}
+h6 {
+  font-weight: lighter;
+  font-size: xx-small;
+  color: lightgray;
+  margin-top: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: right;
+}
+
 .navbar {
   background-color: #313332;
 }
@@ -23,4 +35,9 @@ body {
 }
 .contact-img {
   width: 100px;
+}
+
+.open-source-link {
+  text-decoration: none;
+  color: #5fa1d3;
 }
