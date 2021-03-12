@@ -5,3 +5,18 @@ html {
 body {
   background-color: #fdfeff;
 }
+
+.navbar {
+  background-color: #313332;
+}
+.navbar-logo {
+  width: 75px;
+}
+.container {
+  max-width: 95%;
+}
+
+.menu {
+  display: block;
+  margin: 0 auto;
+}
