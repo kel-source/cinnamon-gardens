@@ -14,9 +14,13 @@ body {
 }
 .container {
   max-width: 95%;
+  text-align: center;
 }
 
 .menu {
   display: block;
   margin: 0 auto;
+}
+.contact-img {
+  width: 100px;
 }
