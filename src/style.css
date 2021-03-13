@@ -24,8 +24,8 @@ h6 {
 .navbar-logo {
   width: 75px;
 }
-.container {
-  max-width: 95%;
+.md-container {
+  margin: 10%;
   text-align: center;
 }
 
@@ -40,4 +40,27 @@ h6 {
 .open-source-link {
   text-decoration: none;
   color: #5fa1d3;
+}
+
+@media (min-width: 576px) {
+  header {
+    display: none;
+  }
+  .md-container {
+    display: none;
+  }
+
+  .lg-container {
+    margin: 30px;
+  }
+  .links {
+    float: right;
+  }
+  .nav-col {
+    margin: 30px;
+  }
+  .content-img {
+    display: block;
+    margin: 0 auto;
+  }
 }
