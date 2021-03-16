@@ -3,7 +3,12 @@ html {
 }
 
 body {
+  background-image: url("/media/client-imgs/uk-to-sri-lanka.jpg");
+  background-repeat: no-repeat;
   background-color: #fdfeff;
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: contain;
 }
 
 footer {
