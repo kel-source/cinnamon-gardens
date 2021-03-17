@@ -50,6 +50,7 @@ h6 {
   }
   li {
     display: inline;
+    margin-right: 20px;
   }
   .md-container {
     display: none;
@@ -58,7 +59,7 @@ h6 {
   .lg-container {
     margin: 30px;
   }
-  .nav-col {
+  .nav-set {
     margin: 30px;
   }
   .links {
