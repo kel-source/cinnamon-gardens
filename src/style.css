@@ -45,6 +45,12 @@ h6 {
   header {
     display: none;
   }
+  ul {
+    padding: 0;
+  }
+  li {
+    display: inline;
+  }
   .md-container {
     display: none;
   }
@@ -52,13 +58,14 @@ h6 {
   .lg-container {
     margin: 30px;
   }
+  .nav-col {
+    margin: 30px;
+  }
   .links {
     float: right;
     margin-right: 20px;
   }
-  .nav-col {
-    margin: 30px;
-  }
+
   .content-img {
     display: block;
     margin: 0 auto;
@@ -67,5 +74,6 @@ h6 {
   }
   .page-contents {
     margin-left: 175px;
+    max-width: 45%;
   }
 }
