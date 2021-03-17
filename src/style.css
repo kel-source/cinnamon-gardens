@@ -54,6 +54,7 @@ h6 {
   }
   .links {
     float: right;
+    margin-right: 20px;
   }
   .nav-col {
     margin: 30px;
