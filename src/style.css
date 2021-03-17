@@ -22,7 +22,7 @@ footer {
 h6 {
   font-weight: lighter;
   font-size: xx-small;
-  color: lightgray;
+  color: #313332;
   margin-top: 10px;
   font-family: "Roboto Condensed", sans-serif;
   text-align: right;
@@ -51,7 +51,7 @@ h6 {
 .content-img {
   display: block;
   margin: 0 auto;
-  width: 40%;
+  width: 80%;
   height: auto;
 }
 .menu-item {
@@ -67,6 +67,9 @@ h6 {
   header {
     display: none;
   }
+  i {
+    margin-top: 10%;
+  }
   .md-container {
     display: none;
   }
@@ -74,14 +77,20 @@ h6 {
     margin: 30px;
   }
   .logo-title {
-    margin-left: 7%;
+    margin-left: 15%;
   }
   .links {
     float: right;
-    margin-right: 13%;
+    margin-right: 20%;
   }
   .page-contents {
-    margin-left: 175px;
-    max-width: 55%;
+    margin-left: 30%;
+    max-width: 45%;
+  }
+  .content-img {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: auto;
   }
 }
