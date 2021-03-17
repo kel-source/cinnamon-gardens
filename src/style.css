@@ -38,12 +38,14 @@ h6 {
 .contact-img {
   width: 100px;
 }
-
 .content-img {
   display: block;
   margin: 0 auto;
   width: 40%;
   height: auto;
+}
+.menu-item {
+  text-decoration: underline;
 }
 
 .open-source-link {
