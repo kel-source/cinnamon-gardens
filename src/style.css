@@ -5,6 +5,13 @@ html {
 body {
   background-color: #e2e2e0;
 }
+ul {
+  padding: 0;
+}
+li {
+  display: inline;
+  margin-right: 20px;
+}
 footer {
   max-width: 98%;
 }
@@ -28,12 +35,15 @@ h6 {
   text-align: center;
 }
 
-.menu {
-  display: block;
-  margin: 0 auto;
-}
 .contact-img {
   width: 100px;
+}
+
+.content-img {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  height: auto;
 }
 
 .open-source-link {
@@ -45,17 +55,9 @@ h6 {
   header {
     display: none;
   }
-  ul {
-    padding: 0;
-  }
-  li {
-    display: inline;
-    margin-right: 20px;
-  }
   .md-container {
     display: none;
   }
-
   .lg-container {
     margin: 30px;
   }
@@ -65,13 +67,6 @@ h6 {
   .links {
     float: right;
     margin-right: 20px;
-  }
-
-  .content-img {
-    display: block;
-    margin: 0 auto;
-    width: 40%;
-    height: auto;
   }
   .page-contents {
     margin-left: 175px;
