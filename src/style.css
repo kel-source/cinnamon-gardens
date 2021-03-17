@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: #313332;
+  background-color: #e2e2e0;
 }
 footer {
   max-width: 98%;
@@ -63,5 +63,8 @@ h6 {
     margin: 0 auto;
     width: 40%;
     height: auto;
+  }
+  .page-contents {
+    margin-left: 175px;
   }
 }
