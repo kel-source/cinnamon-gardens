@@ -12,6 +12,10 @@ li {
   display: inline;
   margin-right: 20px;
 }
+i {
+  color: #313332;
+  margin-right: 5%;
+}
 footer {
   max-width: 98%;
 }
@@ -34,6 +38,12 @@ h6 {
   margin: 10%;
   text-align: center;
 }
+.lg-container {
+  margin: 30px;
+}
+.page-contents {
+  margin: 30px;
+}
 
 .contact-img {
   width: 100px;
@@ -53,25 +63,25 @@ h6 {
   color: #5fa1d3;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   header {
     display: none;
   }
   .md-container {
     display: none;
   }
-  .lg-container {
-    margin: 30px;
-  }
   .nav-set {
     margin: 30px;
   }
+  .logo-title {
+    margin-left: 7%;
+  }
   .links {
     float: right;
-    margin-right: 20px;
+    margin-right: 13%;
   }
   .page-contents {
     margin-left: 175px;
-    max-width: 45%;
+    max-width: 55%;
   }
 }
