@@ -1,5 +1,6 @@
 :root {
-  --primary-font: "Roboto Condensed", sans-serif;
+  --heading-font: "Marmelad", sans-serif;
+  --content-font: "Open Sans", sans-serif;
   --accent-color: #313332;
 }
 
@@ -10,17 +11,25 @@ html {
 
 body {
   background-color: #e2e2e0;
+  font-family: var(--content-font);
 }
-footer {
-  max-width: 98%;
+h1,
+h4,
+h5,
+button,
+nav {
+  font-family: var(--heading-font);
 }
 h6 {
   font-weight: lighter;
   font-size: xx-small;
   color: var(--accent-color);
   margin-top: 10px;
-  font-family: var(--primary-font);
+  font-family: "Roboto Condensed", sans-serif;
   text-align: right;
+}
+footer {
+  max-width: 98%;
 }
 
 .navbar {
@@ -58,6 +67,7 @@ h6 {
   .lg-navbar {
     float: right;
     margin-right: 20%;
+    font-family: var(--heading-font);
   }
   .page-title {
     margin-top: 50px;
