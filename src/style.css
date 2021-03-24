@@ -61,18 +61,34 @@ footer {
   header {
     display: none;
   }
+  body {
+    background-image: url("/media/uk-to-sri-lanka.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .col-md-6 {
+    background-color: rgb(226, 226, 224, 0.9);
+  }
   .lg-logo {
     width: 100px;
   }
   .lg-navbar {
     float: right;
-    margin-right: 20%;
+    margin-right: 12%;
     font-family: var(--heading-font);
   }
   .page-title {
     margin-top: 50px;
     font-size: 5vw;
   }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+  }
+
   .menu-nav {
     padding-top: 150px;
     position: fixed;
@@ -82,10 +98,5 @@ footer {
     width: 65%;
     display: block;
     margin: 0 auto;
-  }
-  .footer {
-    position: fixed;
-    bottom: 0;
-    right: 20px;
   }
 }
