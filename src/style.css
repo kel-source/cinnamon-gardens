@@ -11,10 +11,6 @@ html {
 body {
   background-color: #e2e2e0;
 }
-i {
-  color: var(--accent-color);
-  margin-right: 5%;
-}
 footer {
   max-width: 98%;
 }
@@ -44,6 +40,9 @@ h6 {
   text-decoration: underline;
 }
 
+.contact-link {
+  color: black;
+}
 .open-source-link {
   text-decoration: none;
   color: #5fa1d3;
