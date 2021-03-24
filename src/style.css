@@ -55,9 +55,18 @@ h6 {
   .lg-logo {
     width: 100px;
   }
-  .links {
+  .lg-navbar {
     float: right;
     margin-right: 20%;
+  }
+  .page-title {
+    margin-top: 50px;
+    font-size: 5vw;
+  }
+  .menu-nav {
+    padding-top: 150px;
+    position: fixed;
+    float: left;
   }
   .content-img {
     width: 65%;
