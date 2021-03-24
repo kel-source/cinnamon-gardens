@@ -38,6 +38,12 @@ footer {
 .navbar-logo {
   width: 75px;
 }
+.sm-company-name {
+  background-image: url("/media/uk-to-sri-lanka.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 .button:hover {
   text-decoration: none;
@@ -78,6 +84,10 @@ footer {
     float: right;
     margin-right: 12%;
     font-family: var(--heading-font);
+  }
+  .lg-navbar a {
+    color: black;
+    font-weight: bolder;
   }
   .page-title {
     margin-top: 50px;
