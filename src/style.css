@@ -40,17 +40,6 @@ h6 {
 .page-contents {
   margin: 30px;
 }
-
-.contact-img {
-  width: 100px;
-}
-.content-img {
-  display: block;
-  margin: 0 auto;
-  width: 80%;
-  height: auto;
-}
-
 .menu-item {
   text-decoration: underline;
 }
@@ -64,23 +53,21 @@ h6 {
   header {
     display: none;
   }
-  .nav-set {
-    margin: 30px;
-  }
-  .logo-title {
-    margin-left: 15%;
+  .lg-logo {
+    width: 100px;
   }
   .links {
     float: right;
     margin-right: 20%;
   }
   .content-img {
+    width: 65%;
     display: block;
     margin: 0 auto;
-    width: 30%;
-    height: auto;
   }
-  .menu-nav {
-    margin-right: 80px;
+  .footer {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
   }
 }
