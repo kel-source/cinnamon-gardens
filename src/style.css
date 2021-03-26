@@ -92,6 +92,9 @@ footer {
   text-decoration: none;
   color: #5fa1d3;
 }
+.open-source-link:hover {
+  color: #5fa1d3;
+}
 
 @media (min-width: 768px) {
   header {
@@ -102,6 +105,9 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+  }
+  h6 {
+    color: white;
   }
 
   .col-background {
@@ -149,5 +155,11 @@ footer {
     position: fixed;
     bottom: 0;
     right: 20px;
+  }
+  .open-source-link {
+    color: #3edce0;
+  }
+  .open-source-link:hover {
+    color: #3edce0;
   }
 }
