@@ -39,7 +39,7 @@ footer {
   width: 75px;
 }
 .sm-company-name {
-  background-image: url("/media/uk-to-sri-lanka.jpg");
+  background-image: url("/media/client-imgs/cinnamon.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -53,6 +53,9 @@ footer {
 }
 .menu-item {
   text-decoration: underline;
+}
+.content-img {
+  width: 100%;
 }
 
 .contact-link {
@@ -68,7 +71,7 @@ footer {
     display: none;
   }
   body {
-    background-image: url("/media/uk-to-sri-lanka.jpg");
+    background-image: url("/media/client-imgs/cinnamon.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -86,7 +89,7 @@ footer {
     font-family: var(--heading-font);
   }
   .lg-navbar a {
-    color: black;
+    color: white;
     font-weight: bolder;
   }
   .page-title {
