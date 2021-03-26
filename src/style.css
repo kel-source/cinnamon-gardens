@@ -49,18 +49,22 @@ footer {
 .col-md-3 {
   color: white;
 }
+.page-contents {
+  margin: 30px;
+}
+.page-title {
+  color: black;
+}
+
+.content-img {
+  width: 100%;
+}
 
 .button:hover {
   text-decoration: none;
 }
-.page-contents {
-  margin: 30px;
-}
 .menu-item {
   text-decoration: underline;
-}
-.content-img {
-  width: 100%;
 }
 
 .contact-link {
@@ -115,25 +119,22 @@ footer {
     color: white;
     font-weight: bolder;
   }
+
   .page-title {
     margin-top: 50px;
     font-size: 5vw;
   }
-  .footer {
-    position: fixed;
-    bottom: 0;
-    right: 20px;
+
+  .content-img {
+    width: 65%;
+    display: block;
+    margin: 0 auto;
   }
 
   .menu-nav {
     padding-top: 150px;
     position: fixed;
     float: left;
-  }
-  .content-img {
-    width: 65%;
-    display: block;
-    margin: 0 auto;
   }
 
   .contact-title {
@@ -142,5 +143,11 @@ footer {
   }
   .contact-icon-wrap {
     padding-top: 100px;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
   }
 }
