@@ -121,10 +121,10 @@ footer {
     float: right;
     margin-right: 12%;
     font-family: var(--heading-font);
+    font-size: 18px;
   }
   .lg-navbar a {
     color: white;
-    font-weight: bolder;
   }
 
   .page-title {
@@ -150,6 +150,9 @@ footer {
   }
   .contact-icon-wrap {
     padding-top: 100px;
+  }
+  .contact-link {
+    color: white;
   }
 
   .footer {
