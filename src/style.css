@@ -44,6 +44,9 @@ footer {
 .navbar-logo {
   width: 75px;
 }
+.navbar-toggler {
+  margin-right: 7px;
+}
 .sm-company-name {
   background-image: url("/media/client-imgs/cinnamon.jpg");
   background-size: cover;
@@ -52,7 +55,7 @@ footer {
   color: #e2e2e0;
 }
 .colombo-7 {
-  font-size: 40px;
+  font-size: 34px;
 }
 .col-md-3 {
   color: white;
