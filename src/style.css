@@ -49,6 +49,7 @@ footer {
 }
 .sm-banner {
   background-image: url("/media/client-imgs/cinnamon.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #e2e2e0;
@@ -57,12 +58,13 @@ footer {
   font-size: 40px;
 }
 
-.sm-margin {
-  margin-top: 150px;
-  color: black;
-}
 .page-contents {
   margin: 30px;
+  color: black;
+}
+.sm-margin,
+.xs-margin {
+  margin-top: 150px;
 }
 
 .home-img {
@@ -109,8 +111,21 @@ footer {
   .navbar-title {
     display: none;
   }
+  .xs-margin {
+    margin-top: 20px;
+  }
+  .xs-company-name {
+    display: block !important;
+    margin-top: 110px;
+  }
   .sm-margin {
-    margin-top: 105px;
+    margin-top: 100px;
+  }
+  .contact-title {
+    padding-top: 30px;
+  }
+  .page-title {
+    text-align: center;
   }
 }
 @media (min-width: 768px) {
@@ -152,7 +167,7 @@ footer {
 
   .page-title {
     margin-top: 50px;
-    font-size: 5vw;
+    font-size: 75px;
   }
 
   .lg-company-name {
