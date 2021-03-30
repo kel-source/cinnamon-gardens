@@ -41,6 +41,9 @@ footer {
 .navbar-logo {
   width: 75px;
 }
+.navbar-title {
+  width: 50%;
+}
 .navbar-toggler {
   margin-right: 7px;
 }
@@ -51,8 +54,9 @@ footer {
   color: #e2e2e0;
 }
 .colombo-7 {
-  font-size: 34px;
+  font-size: 40px;
 }
+
 .sm-margin {
   margin-top: 150px;
   color: black;
@@ -101,6 +105,14 @@ footer {
   color: #5fa1d3;
 }
 
+@media (max-width: 420px) {
+  .navbar-title {
+    display: none;
+  }
+  .sm-margin {
+    margin-top: 105px;
+  }
+}
 @media (min-width: 768px) {
   header {
     display: none;
@@ -110,6 +122,9 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+  }
+  h5 {
+    font-size: 1.6vw;
   }
   h6 {
     color: white;
@@ -142,6 +157,9 @@ footer {
 
   .lg-company-name {
     width: 24%;
+  }
+  .colombo-7 {
+    font-size: 4vw;
   }
   .lg-company-p {
     width: 23%;
