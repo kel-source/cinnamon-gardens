@@ -143,8 +143,12 @@ footer {
     font-size: 5vw;
   }
 
+  .lg-company-name {
+    width: 24%;
+  }
   .lg-company-p {
     width: 20%;
+    margin-top: 110px;
   }
   .content-img {
     width: 65%;
