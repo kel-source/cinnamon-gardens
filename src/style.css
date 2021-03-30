@@ -38,18 +38,14 @@ footer {
   max-width: 98%;
 }
 
-.navbar {
-  background-color: var(--accent-color);
-}
 .navbar-logo {
   width: 75px;
 }
 .navbar-toggler {
   margin-right: 7px;
 }
-.sm-company-name {
+.sm-banner {
   background-image: url("/media/client-imgs/cinnamon.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #e2e2e0;
@@ -57,17 +53,15 @@ footer {
 .colombo-7 {
   font-size: 34px;
 }
-.col-md-3 {
-  color: white;
+.sm-margin {
+  margin-top: 150px;
+  color: black;
 }
 .page-contents {
   margin: 30px;
 }
-.page-title {
-  color: black;
-}
 
-.content-img {
+.home-img {
   width: 100%;
 }
 
@@ -78,6 +72,9 @@ footer {
   text-decoration: underline;
 }
 
+.contact-title {
+  margin-top: 180px;
+}
 .contact-link {
   color: var(--accent-color);
   font-size: 15vw;
@@ -99,10 +96,7 @@ footer {
   color: #ac2f20;
 }
 
-.open-source-link {
-  text-decoration: none;
-  color: #5fa1d3;
-}
+.open-source-link,
 .open-source-link:hover {
   color: #5fa1d3;
 }
@@ -121,9 +115,6 @@ footer {
     color: white;
   }
 
-  .col-background {
-    background-color: rgb(226, 226, 224, 0.9);
-  }
   .lg-logo {
     width: 100px;
     margin: 10px;
@@ -137,6 +128,12 @@ footer {
   .lg-navbar a {
     color: white;
   }
+  .col-background {
+    background-color: rgb(226, 226, 224, 0.9);
+  }
+  .sm-margin {
+    margin-top: 0px;
+  }
 
   .page-title {
     margin-top: 50px;
@@ -147,8 +144,8 @@ footer {
     width: 24%;
   }
   .lg-company-p {
-    width: 20%;
-    margin-top: 110px;
+    width: 23%;
+    margin-top: 100px;
   }
   .content-img {
     width: 65%;
@@ -179,9 +176,7 @@ footer {
     bottom: 0;
     right: 20px;
   }
-  .open-source-link {
-    color: #3edce0;
-  }
+  .open-source-link,
   .open-source-link:hover {
     color: #3edce0;
   }
