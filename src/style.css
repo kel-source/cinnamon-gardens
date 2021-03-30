@@ -127,7 +127,6 @@ footer {
   .lg-logo {
     width: 100px;
     margin: 10px;
-    z-index: 100;
   }
   .lg-navbar {
     float: right;
@@ -144,6 +143,9 @@ footer {
     font-size: 5vw;
   }
 
+  .lg-company-p {
+    width: 20%;
+  }
   .content-img {
     width: 65%;
     display: block;
