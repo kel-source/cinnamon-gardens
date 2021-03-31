@@ -41,6 +41,10 @@ footer {
 .navbar-logo {
   width: 75px;
 }
+.home-navbar-logo {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 .navbar-title {
   width: 50%;
 }
@@ -49,7 +53,7 @@ footer {
 }
 .sm-banner {
   background-image: url("/media/cinnamon.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #e2e2e0;
@@ -115,6 +119,9 @@ footer {
 }
 
 @media (max-width: 420px) {
+  .home-navbar-logo {
+    padding: 0px;
+  }
   .navbar-title {
     display: none;
   }
