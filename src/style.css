@@ -72,12 +72,6 @@ footer {
   margin-top: 150px;
 }
 
-.home .colombo-7 {
-  font-size: 60px;
-}
-.home h5 {
-  font-size: 25px;
-}
 .home-img {
   width: 100%;
 }
@@ -119,23 +113,19 @@ footer {
 }
 
 @media (max-width: 420px) {
-  .home-navbar-logo {
-    padding: 0px;
-  }
   .navbar-title {
     display: none;
   }
   .xs-margin {
     margin-top: 20px;
   }
+  .xs-company-name {
+    display: block !important;
+    margin: 60px auto 20px auto;
+    text-align: center;
+  }
   .sm-margin {
     margin-top: 100px;
-  }
-  .home .colombo-7 {
-    font-size: 45px;
-  }
-  .home h5 {
-    font-size: 17px;
   }
   .contact-title {
     padding-top: 30px;
@@ -151,6 +141,7 @@ footer {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+
   h5 {
     font-size: 1.6vw;
   }
@@ -164,13 +155,19 @@ footer {
   }
   .lg-navbar {
     float: right;
-    margin-right: 2%;
-    font-family: var(--heading-font);
-    font-size: 18px;
+    margin-top: 75px;
   }
-  .lg-navbar a {
-    color: white;
+  .lg-navbar .btn {
+    padding-left: 40px;
+    padding-right: 40px;
   }
+
+  .opening-times {
+    position: absolute;
+    right: 3%;
+    margin-top: 350px;
+  }
+
   .col-background {
     background-color: rgb(226, 226, 224, 0.8);
   }
