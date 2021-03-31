@@ -48,14 +48,15 @@ footer {
   margin-right: 7px;
 }
 .sm-banner {
-  background-image: url("/media/client-imgs/cinnamon.jpg");
-  background-size: cover;
+  background-image: url("/media/cinnamon.jpg");
+  background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #e2e2e0;
 }
 .colombo-7 {
   font-size: 40px;
+  font-weight: bold;
 }
 
 .page-contents {
@@ -67,6 +68,12 @@ footer {
   margin-top: 150px;
 }
 
+.home .colombo-7 {
+  font-size: 60px;
+}
+.home h5 {
+  font-size: 25px;
+}
 .home-img {
   width: 100%;
 }
@@ -114,18 +121,17 @@ footer {
   .xs-margin {
     margin-top: 20px;
   }
-  .xs-company-name {
-    display: block !important;
-    margin-top: 110px;
-  }
   .sm-margin {
     margin-top: 100px;
   }
+  .home .colombo-7 {
+    font-size: 45px;
+  }
+  .home h5 {
+    font-size: 17px;
+  }
   .contact-title {
     padding-top: 30px;
-  }
-  .page-title {
-    text-align: center;
   }
 }
 @media (min-width: 768px) {
@@ -133,7 +139,7 @@ footer {
     display: none;
   }
   body {
-    background-image: url("/media/client-imgs/cinnamon.jpg");
+    background-image: url("/media/cinnamon.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -159,7 +165,7 @@ footer {
     color: white;
   }
   .col-background {
-    background-color: rgb(226, 226, 224, 0.9);
+    background-color: rgb(226, 226, 224, 0.8);
   }
   .sm-margin {
     margin-top: 0px;
@@ -168,6 +174,10 @@ footer {
   .page-title {
     margin-top: 50px;
     font-size: 75px;
+  }
+  .page-contents {
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   .lg-company-name {
