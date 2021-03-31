@@ -63,8 +63,7 @@ footer {
   margin: 30px;
   color: black;
 }
-.sm-margin,
-.xs-margin {
+.sm-margin {
   margin-top: 150px;
 }
 
@@ -112,12 +111,9 @@ footer {
   .navbar-title {
     display: none;
   }
-  .xs-margin {
-    margin-top: 20px;
-  }
   .xs-company-name {
     display: block !important;
-    margin: 60px auto 20px auto;
+    margin-bottom: 25px;
     text-align: center;
   }
   .sm-margin {
