@@ -64,7 +64,7 @@ footer {
   color: black;
 }
 .sm-margin {
-  margin-top: 150px;
+  margin-top: 25vh;
 }
 
 .home-img {
@@ -78,9 +78,6 @@ footer {
   text-decoration: underline;
 }
 
-.contact-title {
-  margin-top: 180px;
-}
 .contact-link {
   color: var(--accent-color);
   font-size: 15vw;
@@ -117,10 +114,10 @@ footer {
     text-align: center;
   }
   .sm-margin {
-    margin-top: 100px;
+    margin-top: 16vh;
   }
   .contact-title {
-    padding-top: 30px;
+    padding-top: 10vh;
   }
 }
 @media (min-width: 768px) {
@@ -218,5 +215,13 @@ footer {
   .open-source-link,
   .open-source-link:hover {
     color: #3edce0;
+  }
+}
+@media (min-height: 1000px) {
+  .lg-company-name {
+    margin-top: 10vh;
+  }
+  .contact-title {
+    margin-top: 30vh;
   }
 }
