@@ -22,7 +22,8 @@ h2,
 h4,
 h5,
 button,
-nav {
+nav,
+.story-description-name {
   font-family: var(--heading-font);
 }
 
@@ -69,8 +70,10 @@ h6 {
   margin-top: 140px;
 }
 
-.home-img {
+.content-img {
   width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 .col-background {
@@ -180,11 +183,6 @@ h6 {
   .lg-company-p {
     width: 23%;
     margin-top: 100px;
-  }
-  .content-img {
-    width: 65%;
-    display: block;
-    margin: 0 auto;
   }
 
   .menu-nav {
