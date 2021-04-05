@@ -10,7 +10,10 @@ html {
 }
 
 body {
-  background-color: #e2e2e0;
+  background-image: url("/media/cinnamon.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: var(--content-font);
 }
 h1,
@@ -25,6 +28,12 @@ nav {
 h5 {
   font-size: 15px;
 }
+ul {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
 
 h6 {
   font-weight: lighter;
@@ -33,6 +42,7 @@ h6 {
   margin-top: 10px;
   font-family: "Roboto Condensed", sans-serif;
   text-align: right;
+  color: white;
 }
 footer {
   max-width: 98%;
@@ -43,16 +53,10 @@ footer {
 }
 .navbar-title {
   width: 50%;
+  color: white;
 }
 .navbar-toggler {
   margin-right: 7px;
-}
-.sm-banner {
-  background-image: url("/media/banner-cinnamon.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #e2e2e0;
 }
 .colombo-7 {
   font-size: 40px;
@@ -70,6 +74,10 @@ footer {
   width: 100%;
 }
 
+.col-background {
+  background-color: rgb(226, 226, 224, 0.8);
+  padding-top: 10px;
+}
 .button:hover {
   text-decoration: none;
 }
@@ -77,9 +85,14 @@ footer {
   text-decoration: underline;
 }
 
+.contact-title,
+.contact-text {
+  color: white;
+}
 .contact-link {
   color: var(--accent-color);
   font-size: 15vw;
+  color: white;
 }
 .contact-link:hover {
   transition: 1.25s;
@@ -112,9 +125,6 @@ footer {
     margin-bottom: 25px;
     text-align: center;
   }
-  .sm-margin {
-    margin-top: 16vh;
-  }
   .contact-title {
     padding-top: 10vh;
   }
@@ -123,24 +133,9 @@ footer {
   header {
     display: none;
   }
-  body {
-    background-image: url("/media/cinnamon.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
 
   h5 {
     font-size: 1.6vw;
-  }
-  h6 {
-    color: white;
-  }
-  ul {
-    text-decoration: none;
-  }
-  li {
-    list-style: none;
   }
 
   .lg-logo {
@@ -160,9 +155,6 @@ footer {
     margin-top: 350px;
   }
 
-  .col-background {
-    background-color: rgb(226, 226, 224, 0.8);
-  }
   .sm-margin {
     margin-top: 0px;
   }
@@ -200,14 +192,10 @@ footer {
 
   .contact-title,
   .contact-text {
-    color: white;
     text-align: center;
   }
   .contact-icon-wrap {
     padding-top: 50px;
-  }
-  .contact-link {
-    color: white;
   }
 
   .footer {
