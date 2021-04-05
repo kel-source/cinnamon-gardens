@@ -2,6 +2,7 @@
   --heading-font: "Marmelad", sans-serif;
   --content-font: "Open Sans", sans-serif;
   --accent-color: #313332;
+  --primary-color: white;
 }
 
 html {
@@ -38,14 +39,11 @@ li {
 h6 {
   font-weight: lighter;
   font-size: xx-small;
-  color: var(--accent-color);
   margin-top: 10px;
   font-family: "Roboto Condensed", sans-serif;
   text-align: right;
-  color: white;
-}
-footer {
-  max-width: 98%;
+  color: var(--primary-color);
+  margin-right: 10px;
 }
 
 .navbar-logo {
@@ -86,16 +84,15 @@ footer {
   text-decoration: underline;
 }
 .contact-title {
-  margin-top: 40vw;
+  margin-top: 30vw;
 }
 .contact-title,
 .contact-text {
-  color: white;
+  color: var(--primary-color);
 }
 .contact-link {
-  color: var(--accent-color);
   font-size: 15vw;
-  color: white;
+  color: var(--primary-color);
 }
 .contact-link:hover {
   transition: 1.25s;
@@ -116,7 +113,7 @@ footer {
 
 .open-source-link,
 .open-source-link:hover {
-  color: #5fa1d3;
+  color: #83b4bb;
 }
 
 @media (max-width: 420px) {
@@ -202,16 +199,6 @@ footer {
   }
   .contact-icon-wrap {
     padding-top: 50px;
-  }
-
-  .footer {
-    position: fixed;
-    bottom: 0;
-    right: 20px;
-  }
-  .open-source-link,
-  .open-source-link:hover {
-    color: #3edce0;
   }
 }
 @media (min-height: 1000px) {
