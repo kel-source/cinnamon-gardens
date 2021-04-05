@@ -138,8 +138,6 @@ footer {
   }
   ul {
     text-decoration: none;
-    position: relative;
-    right: 50px;
   }
   li {
     list-style: none;
@@ -150,8 +148,10 @@ footer {
     margin: 10px;
   }
   .lg-navbar {
+    position: relative;
     float: right;
     margin-top: 75px;
+    right: 50px;
   }
 
   .opening-times {
