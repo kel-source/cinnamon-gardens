@@ -25,14 +25,6 @@ nav {
 h5 {
   font-size: 15px;
 }
-ul {
-  text-decoration: none;
-  position: relative;
-  right: 50px;
-}
-li {
-  list-style: none;
-}
 
 h6 {
   font-weight: lighter;
@@ -144,6 +136,14 @@ footer {
   h6 {
     color: white;
   }
+  ul {
+    text-decoration: none;
+    position: relative;
+    right: 50px;
+  }
+  li {
+    list-style: none;
+  }
 
   .lg-logo {
     width: 100px;
@@ -152,10 +152,6 @@ footer {
   .lg-navbar {
     float: right;
     margin-top: 75px;
-  }
-  .lg-navbar .btn {
-    padding-left: 40px;
-    padding-right: 40px;
   }
 
   .opening-times {
