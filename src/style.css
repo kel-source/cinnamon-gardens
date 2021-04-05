@@ -25,6 +25,14 @@ nav {
 h5 {
   font-size: 15px;
 }
+ul {
+  text-decoration: none;
+  position: relative;
+  right: 50px;
+}
+li {
+  list-style: none;
+}
 
 h6 {
   font-weight: lighter;
@@ -56,7 +64,6 @@ footer {
 }
 .colombo-7 {
   font-size: 40px;
-  font-weight: bold;
 }
 
 .page-contents {
