@@ -93,7 +93,7 @@ h6 {
   color: var(--primary-color);
 }
 .contact-link {
-  font-size: 8vw;
+  font-size: 100px;
   color: var(--primary-color);
 }
 .contact-link:hover {
@@ -129,6 +129,9 @@ h6 {
   }
   .contact-title {
     padding-top: 5vh;
+  }
+  .contact-link {
+    font-size: 50px;
   }
 }
 @media (min-width: 768px) {
@@ -190,12 +193,12 @@ h6 {
     float: left;
   }
 
-  .contact-title {
-    padding-top: 80px;
-  }
   .contact-title,
   .contact-text {
     text-align: center;
+  }
+  .contact-link {
+    font-size: 170px;
   }
 }
 @media (min-height: 1000px) {
@@ -203,6 +206,6 @@ h6 {
     margin-top: 10vh;
   }
   .contact-title {
-    margin-top: 30vh;
+    margin-top: 25vh;
   }
 }
