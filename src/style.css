@@ -94,7 +94,7 @@ h6 {
   color: var(--primary-color);
 }
 .contact-link {
-  font-size: 15vw;
+  font-size: 8vw;
   color: var(--primary-color);
 }
 .contact-link:hover {
@@ -191,12 +191,12 @@ h6 {
     float: left;
   }
 
+  .contact-title {
+    padding-top: 80px;
+  }
   .contact-title,
   .contact-text {
     text-align: center;
-  }
-  .contact-icon-wrap {
-    padding-top: 50px;
   }
 }
 @media (min-height: 1000px) {
