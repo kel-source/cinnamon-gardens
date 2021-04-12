@@ -22,8 +22,7 @@ h2,
 h4,
 h5,
 button,
-nav,
-.story-description-name {
+nav {
   font-family: var(--heading-font);
 }
 
@@ -178,7 +177,7 @@ h6 {
     width: 22%;
   }
   .colombo-7 {
-    font-size: 4vw;
+    font-size: 3.6vw;
   }
   .lg-company-p {
     width: 23%;
