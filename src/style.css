@@ -86,7 +86,7 @@ h6 {
   text-decoration: underline;
 }
 .contact-title {
-  margin-top: 30vw;
+  margin-top: 23vw;
 }
 .contact-title,
 .contact-text {
@@ -177,10 +177,7 @@ h6 {
   }
 
   .lg-company-name {
-    width: 22%;
-  }
-  .colombo-7 {
-    font-size: 3.6vw;
+    width: 25vw;
   }
   .lg-company-p {
     width: 23%;
