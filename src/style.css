@@ -114,8 +114,14 @@ h6 {
 }
 
 .open-source-link,
-.open-source-link:hover {
-  color: #83b4bb;
+.open-source-link:hover,
+.kelcodes-link,
+.kelcodes-link:hover {
+  color: #3edce0;
+}
+.fa-spider:hover {
+  transition: 1s;
+  transform: rotateX(180deg);
 }
 
 @media (max-width: 420px) {
