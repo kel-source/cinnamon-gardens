@@ -145,10 +145,6 @@ h6 {
     display: none;
   }
 
-  h5 {
-    font-size: 1.6vw;
-  }
-
   .lg-logo {
     width: 100px;
     margin: 10px;
@@ -158,6 +154,9 @@ h6 {
     float: right;
     margin-top: 75px;
     right: 50px;
+  }
+  .lg-company {
+    font-size: 100vw;
   }
 
   .opening-times {
@@ -182,9 +181,6 @@ h6 {
     margin-right: 50px;
   }
 
-  .lg-company-name {
-    width: 25vw;
-  }
   .lg-company-p {
     width: 23%;
     margin-top: 100px;
