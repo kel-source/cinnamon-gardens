@@ -155,9 +155,6 @@ h6 {
     margin-top: 75px;
     right: 50px;
   }
-  .lg-company {
-    font-size: 100vw;
-  }
 
   .opening-times {
     position: absolute;
@@ -181,9 +178,20 @@ h6 {
     margin-right: 50px;
   }
 
+  .lg-company {
+    position: fixed;
+    text-align: center;
+    font-size: 500px;
+  }
+  .lg-company h1 {
+    font-size: 4vw;
+  }
+  .lg-company h5 {
+    font-size: 1.6vw;
+  }
   .lg-company-p {
     width: 23%;
-    margin-top: 100px;
+    margin-top: 200px;
   }
 
   .menu-nav {
@@ -201,9 +209,6 @@ h6 {
   }
 }
 @media (min-height: 1000px) {
-  .lg-company-name {
-    margin-top: 10vh;
-  }
   .contact-title {
     margin-top: 25vh;
   }
