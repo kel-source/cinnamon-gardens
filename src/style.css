@@ -73,6 +73,7 @@ h6 {
   width: 100%;
   display: block;
   margin: 0 auto;
+  max-width: 800px;
 }
 
 .col-background {
@@ -162,8 +163,9 @@ h6 {
 
   .opening-times {
     position: absolute;
-    right: 3%;
+    right: 2%;
     margin-top: 350px;
+    text-align: right;
   }
   .opening-times h4 {
     font-size: 17px;
