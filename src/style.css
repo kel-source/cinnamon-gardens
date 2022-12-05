@@ -134,6 +134,12 @@ h6 {
     margin-bottom: 25px;
     text-align: center;
   }
+  .xs-company-name .opening-times {
+    margin-top: 40px;
+  }
+  .xs-company-name .opening-times p {
+    margin-bottom: 5px;
+  }
   .colombo-7 {
     font-size: 33px;
   }
@@ -145,6 +151,7 @@ h6 {
     font-size: 50px;
   }
 }
+
 @media (min-width: 768px) {
   header {
     display: none;
@@ -214,6 +221,7 @@ h6 {
     font-size: 170px;
   }
 }
+
 @media (min-height: 1000px) {
   .contact-title {
     margin-top: 25vh;
