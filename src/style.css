@@ -96,9 +96,9 @@ h6 {
 .contact-link {
   font-size: 100px;
   color: var(--primary-color);
+  transition: 1.25s ease-in-out;
 }
 .contact-link:hover {
-  transition: 1.25s;
   transform: rotateZ(360deg);
 }
 .fa-facebook-square:hover {
@@ -120,8 +120,10 @@ h6 {
 .kelcodes-link:hover {
   color: #3edce0;
 }
+.fa-spider {
+  transition: 1s ease-in-out;
+}
 .fa-spider:hover {
-  transition: 1s;
   transform: rotateX(180deg);
 }
 
