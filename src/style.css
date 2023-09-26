@@ -60,6 +60,25 @@ h6 {
   font-size: 30px;
   margin-bottom: 0px;
 }
+.nav-button {
+  color: white !important;
+  text-align: left !important;
+}
+
+.home-button {
+  padding: 30px 15px;
+  width: fit-content;
+  border: 1px solid white;
+  border-radius: 0 4px 4px 0;
+  border-left: 0;
+}
+.home-button:hover {
+  border: 1px solid white;
+  border-left: 0;
+}
+.home-button:first-of-type {
+  margin-top: 100px;
+}
 
 .page-contents {
   margin: 0px 30px 0px 30px;
@@ -104,6 +123,7 @@ h6 {
 
 .contact-title {
   margin-top: 23vw;
+  text-align: center;
 }
 .contact-title,
 .contact-text {
@@ -112,7 +132,7 @@ h6 {
 .contact-link {
   font-size: 100px;
   color: var(--primary-color);
-  transition: 1.25s ease-in-out;
+  transition: color 1.25s ease-in-out, transform 1.25s ease-in-out;
 }
 .contact-link:hover {
   transform: rotateZ(360deg);
@@ -137,7 +157,7 @@ h6 {
   color: #3edce0;
 }
 .fa-spider {
-  transition: 1s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 .fa-spider:hover {
   transform: rotateX(180deg);
@@ -172,7 +192,6 @@ h6 {
 
   .contact-title {
     padding-top: 5vh;
-    text-align: center;
   }
   .contact-link {
     font-size: 50px;
