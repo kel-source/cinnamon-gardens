@@ -109,9 +109,21 @@ h6 {
 .menu-item {
   text-decoration: underline;
 }
-
 #reservation {
-  width: 100%;
+  background-color: var(--accent-color);
+  margin-top: 60px;
+}
+.reservation-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+.reservation-inner p {
+  padding-right: 50px;
+  text-align: center;
 }
 
 .contact-title {
@@ -261,5 +273,11 @@ h6 {
 @media (min-height: 1000px) {
   .contact-title {
     margin-top: 25vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  .reservation-inner p {
+    display: none !important;
   }
 }
