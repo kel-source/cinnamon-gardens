@@ -2,7 +2,7 @@
   --heading-font: "Marmelad", sans-serif;
   --content-font: "Open Sans", sans-serif;
   --accent-color: #313332;
-  --primary-color: white;
+  --primary-color: #ffffff;
 }
 
 html {
@@ -51,7 +51,7 @@ h6 {
 }
 .navbar-title {
   width: 50%;
-  color: white;
+  color: var(--primary-color);
 }
 .navbar-toggler {
   margin-right: 7px;
@@ -61,19 +61,19 @@ h6 {
   margin-bottom: 0px;
 }
 .nav-button {
-  color: white !important;
+  color: var(--primary-color) !important;
   text-align: left !important;
 }
 
 .home-button {
   padding: 30px 15px;
   width: fit-content;
-  border: 1px solid white;
+  border: 1px solid var(--primary-color);
   border-radius: 0 4px 4px 0;
   border-left: 0;
 }
 .home-button:hover {
-  border: 1px solid white;
+  border: 1px solid var(--primary-color);
   border-left: 0;
 }
 .home-button:first-of-type {
@@ -109,16 +109,9 @@ h6 {
 .menu-item {
   text-decoration: underline;
 }
-.menu-buttons-wrap {
-  display: flex;
-  justify-content: space-between;
-}
-.menu-button:first-of-type {
-  margin-right: 2px;
-}
-.menu-button:last-of-type {
-  margin-left: 2px;
-  margin-top: 0 !important;
+
+#reservation {
+  width: 100%;
 }
 
 .contact-title {
