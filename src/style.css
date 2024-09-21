@@ -125,6 +125,15 @@ h6 {
   padding-right: 50px;
   text-align: center;
 }
+.open-table {
+  width: fit-content;
+  float: right;
+  margin-top: 15px;
+}
+.open-table img {
+  width: 100px;
+  height: 100px;
+}
 
 .contact-title {
   margin-top: 23vw;
