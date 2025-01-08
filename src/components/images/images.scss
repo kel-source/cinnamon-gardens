@@ -1,0 +1,20 @@
+@use 'sass:math';
+
+@import '../../abstracts/mixins/mixins';
+@import '../../abstracts/variables/variables';
+
+.row-type-images {
+    .row-inner {
+        &.half-pd-top {
+            padding-top: math.div($top-padding, 4);
+        }
+        &.half-pd-btm {
+            padding-bottom: math.div($top-padding, 4);
+        }
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}

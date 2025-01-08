@@ -1,0 +1,40 @@
+@use 'sass:math';
+
+@import '../../abstracts/mixins/mixins';
+@import '../../abstracts/variables/variables';
+
+
+.row-type-award-banner {
+    position: relative;
+    z-index: 2;
+
+    .row-inner {
+        padding-top: $col-gap !important;
+        padding-bottom: $col-gap !important;
+
+        .awards {
+            display: flex;
+            justify-content: center;
+
+            a ~ :has(~ a) {
+                margin-left: $col-gap !important;
+                margin-right: 0 !important;
+            }
+    
+            a + a {
+                &:last-of-type {
+                    margin-left: $col-gap !important;
+                }
+            }
+
+            @include sm {
+                column-gap: 10px;
+            }
+        }
+
+        img {
+            height: 100px;
+            width: 100px;
+        }
+    }
+}

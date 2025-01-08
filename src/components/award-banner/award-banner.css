@@ -1,0 +1,41 @@
+@media (min-width: 651px) {
+  .sm-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .sm-none {
+    display: none !important;
+  }
+}
+
+.row-type-award-banner {
+  position: relative;
+  z-index: 2;
+}
+.row-type-award-banner .row-inner {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+.row-type-award-banner .row-inner .awards {
+  display: flex;
+  justify-content: center;
+}
+.row-type-award-banner .row-inner .awards a ~ :has(~ a) {
+  margin-left: 20px !important;
+  margin-right: 0 !important;
+}
+.row-type-award-banner .row-inner .awards a + a:last-of-type {
+  margin-left: 20px !important;
+}
+@media (max-width: 650px) {
+  .row-type-award-banner .row-inner .awards {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+}
+.row-type-award-banner .row-inner img {
+  height: 100px;
+  width: 100px;
+}/*# sourceMappingURL=award-banner.css.map */

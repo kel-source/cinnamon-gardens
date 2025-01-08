@@ -1,0 +1,121 @@
+@use 'sass:math';
+
+@import '../../abstracts/mixins/mixins';
+@import '../../abstracts/variables/variables';
+
+.row-type-menu {
+    .section {
+        padding-bottom: 25px;
+        
+        &:not(:first-of-type) {
+            padding-top: 25px;
+        }
+    }
+
+    ul.dishes {
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 0;
+
+        li.dish {
+            display: flex;
+            justify-content: space-between;
+
+            &:not(:last-of-type) {
+                margin-bottom: 25px;
+            }
+
+            div {
+                width: 75%;
+            }
+
+            .price {
+                margin-top: 0;
+            }
+        }
+    }
+
+    h2 {
+        padding-bottom: 25px;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+
+        span {
+            display: inline-block;
+            height: 1px;
+            background-color: $black;
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+    }
+
+    h3 {
+        font-family: $body-font;
+        margin-bottom: 0 !important;
+        position: relative;
+        width: fit-content;
+
+        &.vg, &.gf, &.vg-gf {
+            &:hover::before {
+                position: absolute;
+                top: -4px;
+                background-color: $mid;
+                color: $white;
+                padding: 3px 5px;
+                font-size: 12px;
+            }
+        }
+
+        &.vg {
+            &::after {
+                content: " (VG)";
+            }
+
+            &:hover::before {
+                content: "Vegan";
+                right: -53px;
+            }
+        }
+
+        &.gf {
+            &::after {
+                content: " (GF)";
+            }
+
+            &:hover::before {
+                content: "Gluten free";
+                right: -81px;
+            }
+        }
+
+        &.vg-gf {
+            &::after {
+                content: " (VG/GF)";
+            }
+
+            &:hover::before {
+                content: "Vegan & gluten free";
+                right: -131px;
+            }
+        }
+
+        @media (max-width: 567px) {
+            &.vg, &.gf, &.vg-gf {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .allergen-key {
+        text-align: right;
+        font-size: 12px;
+        margin-top: 20px;
+
+        br {
+            margin: 0;
+        }
+    }
+}

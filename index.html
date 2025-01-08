@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>COLOMBO 7 Cinnamon Gardens, "A Taste of Sri Lanka" | Home</title>
+    <title>Colombo 7 Cinnamon Gardens, "A Taste of Sri Lanka" | Home</title>
     <meta
       name="description"
-      content="Found in Old Amersham, COLOMBO 7 Cinnamon Gardens is a takeaway restaurant
+      content="Found in Old Amersham, Colombo 7 Cinnamon Gardens is a takeaway restaurant
       providing contemporary infusions of authentic Sri Lankan flavours."
     />
+
+    <!-- REMOVE THIS BEFORE COPYING CODE OVER TO MAIN SITE -->
+    <meta name="robots" content="noindex">
+
+    <link rel="icon" type="image/x-icon" href="/media/logo.png">
 
     <link
       rel="stylesheet"
@@ -28,11 +33,15 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Marmelad&family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
-    />
+    /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
 
     <script
       src="https://kit.fontawesome.com/532f39a2cb.js"
@@ -42,14 +51,17 @@
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <header class="fixed-top sm-banner">
-      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <a href="/"
-          ><img src="/media/logo.png" class="navbar-logo" title="Home"
-        /></a>
-        <div class="navbar-title text-center">
-          <h1 class="colombo-7">COLOMBO 7</h1>
-        </div>
+
+    <!-- loading screen -->
+    <div class="loading-screen">
+      <img class="loading-logo" src="/media/logo.png" />
+    </div>
+
+    <header class="bg-dark">
+      <nav class="sm-nav navbar navbar-expand-lg navbar-light">
+        <a class="logo" href="/"
+        ><img src="/media/logo.png" title="Home"
+      /></a>
         <button
           class="navbar-toggler bg-white"
           type="button"
@@ -64,182 +76,248 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-white" href="/"><strong>Home</strong></a>
+              <a class="nav-link" href="/menu/index.html">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="/menu">Menu</a>
+              <a class="nav-link" href="/gallery/index.html">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="/menu#reservation"
-                >Make a reservation</a
-              >
+              <a class="nav-link" href="/contact/index.html">Contact Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="/contact"
-                >Contact Us</a
-              >
+              <a class="nav-link" href="/book-now/index.html">Book Now</a>
             </li>
           </ul>
         </div>
       </nav>
-    </header>
-    <div class="container-fluid">
-      <div class="row no-gutters text-white">
-        <div class="col-md-3">
-          <div class="fixed-top d-none d-md-block">
-            <img src="/media/logo.png" class="lg-logo" title="Home" />
-            <div class="lg-company pl-3 pt-3">
-              <h1 class="colombo-7">COLOMBO 7</h1>
-            </div>
-            <p class="lg-company-p pl-3">
-              Passionate about sustainability, we work with local suppliers to
-              help support fellow independent businesses both in Great Britain
-              and Sri Lanka.
-            </p>
-            <a
-              href="/menu#reservation"
-              type="button"
-              class="home-button btn btn-dark btn-block"
-            >
-              <i class="fa fa-calendar fa-2x pt-3"></i>
-              <h5>Book a Table</h5>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6 sm-margin">
-          <div class="page-contents">
-            <div class="xs-company-name d-none text-white">
-              <h1 class="colombo-7">COLOMBO 7</h1>
-            </div>
-            <div
-              class="xs-opening-times d-block d-md-none text-center pt-2 text-white"
-            >
-              <p class="font-weight-bold">
-                TUE:<span class="font-weight-light">&nbsp 18:00-23:00</span>
-              </p>
-              <p class="font-weight-bold">
-                WED:<span class="font-weight-light">&nbsp 18:00-23:00</span>
-              </p>
-              <p class="font-weight-bold">
-                THU:<span class="font-weight-light">&nbsp 18:00-23:00</span>
-              </p>
-              <p class="font-weight-bold">
-                FRI: <span class="font-weight-light">&nbsp 18:00-23:00</span>
-              </p>
-              <p class="font-weight-bold">
-                SAT:<span class="font-weight-light">&nbsp 18:00-23:00</span>
-              </p>
-            </div>
-            <img
-              src="/media/client-imgs/blue-buddha-portrait.jpg"
-              class="img-fluid content-img mt-4 mb-3"
-              alt="Colombo 7 Buddhas"
-            />
-            <img
-              src="/media/client-imgs/lemongrass.jpg"
-              class="img-fluid content-img mb-3"
-              alt="Lemongrass"
-            />
-            <img
-              src="/media/client-imgs/mutton-rolls.jpg"
-              class="img-fluid content-img mb-3"
-              alt="Mutton rolls"
-            />
-            <img
-              src="/media/client-imgs/lorry.jpg"
-              class="img-fluid content-img mb-3"
-              alt="Lorry delivery"
-            />
-            <img
-              src="/media/client-imgs/spice-table.jpg"
-              class="img-fluid content-img mb-3"
-              alt="Street food"
-            />
-            <img
-              src="/media/client-imgs/building-1.jpg"
-              class="img-fluid content-img mb-3"
-              alt="Independence Square, Sri Lanka"
-            />
-            <img
-              src="/media/client-imgs/tea-picker.jpg"
-              class="img-fluid content-img mb-3"
-              alt="Tea picker"
-            />
-            <img
-              src="/media/client-imgs/street-food.jpg"
-              class="img-fluid content-img mb-3"
-              alt="Street food fish patties"
-            />
-            <img
-              src="/media/client-imgs/bicycle.jpg"
-              class="img-fluid content-img mb-3"
-              alt="King coconuts"
-            />
-            <img
-              src="/media/client-imgs/hopper.png"
-              class="img-fluid content-img mb-3"
-              alt="Street food hopper"
-            />
-            <img
-              src="/media/client-imgs/big-fish.jpg"
-              class="img-fluid content-img mb-3"
-              alt="Sri Lankan fishing"
-            />
-            <img
-              src="/media/client-imgs/roti.jpg"
-              class="img-fluid content-img mb-3"
-              alt="Street food roti"
-            />
-            <img
-              src="/media/client-imgs/lion-lager.jpg"
-              class="img-fluid content-img mb-3"
-              alt="Lion lager"
-            />
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="fixed-top d-none d-md-block">
-            <div class="lg-navbar">
-              <ul>
-                <li>
-                  <a href="/" class="text-white font-weight-bold">Home</a>
-                </li>
-                <li>
-                  <a href="/menu" class="text-white">Menu</a>
-                </li>
-                <li>
-                  <a href="/contact" class="text-white">
-                    Contact Us</a
-                  >
-                </li>
-              </ul>
 
-              <div class="open-table">
-                <a href="https://www.opentable.co.uk/restaurant/profile/319557/reserve?rid=319557&restref=319557" target="_blank" rel="noopener">
-                  <img height="250px" width="250px" src="https://restaurant.opentable.co.uk/badge/ot/DC2-2024.png">
-                </a>
+      <div class="row-inner no-pd-top no-pd-btm">
+        <div class="col col-12">
+          <nav class="lg-nav">
+            <div class="nav-inner">
+              <div>
+                <a class="logo" href="/"
+                  ><img src="/media/logo.png" title="Home"
+                /></a>
+              </div>
+              <div class="menu-wrap">
+                <a class="menu-item" href="/menu/index.html">Menu</a>
+                <a class="menu-item" href="/gallery/index.html">Gallery</a>
+                <a class="menu-item" href="/contact/index.html">Contact</a>
+                <div class="menu-item book-now">
+                  <p class="button-primary">Book Now</p>
+                  <div class="opentable-dropdown">
+                    <div id="reservation">
+                      <script
+                        type="text/javascript"
+                        src="//www.opentable.com/widget/reservation/loader?rid=319557&type=standard&theme=tall&iframe=true&overlay=false&domain=com&lang=en-US"
+                      ></script>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="opening-times">
-              <h4 class="font-weight-bold">
-                TUE:<span class="font-weight-light">&nbsp 18:00-23:00</span>
-              </h4>
-              <h4 class="font-weight-bold">
-                WED:<span class="font-weight-light">&nbsp 18:00-23:00</span>
-              </h4>
-              <h4 class="font-weight-bold">
-                THU:<span class="font-weight-light">&nbsp 18:00-23:00</span>
-              </h4>
-              <h4 class="font-weight-bold">
-                FRI: <span class="font-weight-light">&nbsp 18:00-23:00</span>
-              </h4>
-              <h4 class="font-weight-bold">
-                SAT:<span class="font-weight-light">&nbsp 18:00-23:00</span>
-              </h4>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="row row-type-hero bg-dark">
+        <div class="row-inner no-pd-btm">
+          <div class="col col-12">
+            <h1>Colombo 7</h1>
+            <div class="awards sm-none">
+                            <!-- <a class="open-table" href="https://www.opentable.co.uk/restaurant/profile/319557/reserve?rid=319557&restref=319557" target="_blank" rel="noopener">
+                <img height="250px" width="250px" src="https://restaurant.opentable.co.uk/badge/ot/DC2-2024.png">
+              </a>
+              <a class="restaurant-guru" href="https://restaurantguru.com/Colombo-7-Cinnamon-Gardens-Amersham" target="_blank" rel="noopener">
+                <img height="250px" width="250px" src="/media/restaurant-guru.png" alt="">
+              </a> -->
+
+              <div class="open-table">
+                <img height="250px" width="250px" src="https://restaurant.opentable.co.uk/badge/ot/DC2-2024.png">
+              </div>
+              <div class="restaurant-guru">
+                <img height="250px" width="250px" src="/media/restaurant-guru.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row-inner no-pd-top no-pd-btm">
+          <div class="col col-12">
+            <img src="/media/skyline.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-type-award-banner bg-mid sm-only">
+        <div class="row-inner">
+          <div class="col col-12">
+            <div class="awards">
+              <div class="open-table">
+                <img height="250px" width="250px" src="https://restaurant.opentable.co.uk/badge/ot/DC2-2024.png">
+              </div>
+              <div class="restaurant-guru">
+                <img height="250px" width="250px" src="/media/restaurant-guru.png" alt="">
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- <div class="row row-type-text bg-light">
+        <div class="row-inner">
+          <div class="col col-8">
+            <p>
+              Cinnamon Gardens in Colombo 7, Sri Lanka, is a region named after the plantations that over 100 years ago, covered the land and produced the world’s finest cinnamon. Today, this affluent area is better known for its beauty and natural purities aligned with stylish cafes, galleries and wonderful street-food.
+            </p>
+            <p>
+              With family and a history in Colombo, our aim is to bring a taste of our Sri Lankan heritage to Buckinghamshire, England through our unique menu based upon old family recipes that have been passed down from generation to generation. Passionate about sustainability, we work with local suppliers to help support fellow independent businesses both in Great Britain and Sri Lanka and with contemporary infusions of our home country’s vibrant flavours, we are proud to introduce you to Colombo 7 Cinnamon Gardens.
+            </p>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="row row-type-images bg-light">
+        <div class="row-inner no-pd-btm">
+          <div class="col col-4">
+            <img
+              src="/media/client-imgs/contact/lemongrass.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col col-4">
+            <img
+              src="/media/client-imgs/home/row-1/saucepan-handle-and-rolls.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col col-4">
+            <img
+              src="/media/chilli.jpeg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="row-inner no-pd-top">
+          <div class="col col-4">
+            <img
+              src="/media/client-imgs/home/row-2/man-4.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col col-4">
+            <img
+              src="/media/client-imgs/home/row-2/beer-pour.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col col-4">
+            <img
+              src="/media/client-imgs/home/row-2/cookie-with-dirt.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-type-half-half bg-mid">
+        <div class="row-inner">
+          <div class="col col-6 content-wrap">
+            <h2>Contact us</h2>
+            <div class="links">
+              <p>
+                <a class="address" target="_blank" href="https://www.google.com/maps/dir//cinnamon+gardens+amersham/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x487667edf29dbbb3:0x886538049cdc277b?sa=X&ved=1t:3061&ictx=111">
+                  <span class="fa fa-icon">&#xf3c5;</span>
+                  <span class="text">27 Chesham Rd, Amersham, HP6 5HN</span>
+                </a>
+              </p>
+              <p>
+                <a class="phone" target="_blank" href="tel:07859820368">
+                  <span class="fa fa-icon">&#xf095;</span>
+                  <span class="text">078 598 203 68</span>
+                </a>
+              </p>
+            </div>
+            <div class="opening-times">
+              <p>
+                <strong>Mon:</strong> closed<br>
+                <strong>Tues-Sat:</strong> 18:00-23:00<br>
+                <strong>Sun:</strong> closed
+              </p>
+            </div>
+          </div>
+          <div class="col col-6 asset-wrap">
+            <div class="asset">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9896.139562331628!2d-0.6075578!3d51.6775044!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487667edf29dbbb3%3A0x886538049cdc277b!2sColombo%207!5e0!3m2!1sen!2suk!4v1725454549994!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <!-- <div id="map"></div>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsj-PM4rlEqZ8O3koX6uEeoqhEQxwiovI&callback=myMap"></script> -->
+          </div>
+        </div>
+      </div>
     </div>
+
+    <footer class="bg-dark">
+      <div class="row-inner footer-inner no-pd-top no-pd-btm">
+        <div class="col col-12">
+          <p>
+            <a 
+              href="https://www.google.com/maps/dir//cinnamon+gardens+amersham/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x487667edf29dbbb3:0x886538049cdc277b?sa=X&ved=1t:3061&ictx=111" 
+              class="address"
+              target="_blank"
+              class="footer-link"
+            >
+              <span class="fa fa-icon">&#xf3c5;</span>27 Chesham Rd, Amersham, HP6 5HN
+            </a>
+          </p>
+          <div class="socials">
+            <a
+              href="https://www.facebook.com/Cinnamon-Gardens-100497095289324/"
+              target="_blank"
+              title="Facebook"
+              class="footer-link"
+            >
+              <span class="fa fa-icon">&#xf09a;</span>
+            </a>
+            <a
+              href="https://www.instagram.com/colombo7cg/"
+              target="_blank"
+              title="Instagram"
+              class="footer-link"
+            >
+              <span class="fa fa-icon">&#xf16d;</span>
+            </a>
+            <a
+              href="https://api.whatsapp.com/send?phone=447859820368&fbclid=IwAR0xpRqwca5SmqvrgUYzZoOGUQbS6Cbg0u-9VW7J8-N1ESZ5bcSBFM9123o"
+              target="_blank"
+              title="WhatsApp"
+              class="footer-link"
+            >
+              <span class="fa fa-icon">&#xf232;</span>
+            </a>
+            <a
+              href="mailto:cinnamongardencol7@gmail.com"
+              target="_blank"
+              title="Email"
+              class="footer-link"
+            >
+              <span class="fa fa-icon">&#xf0e0;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/src/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.5.1/SmoothScroll.min.js" integrity="sha512-BkMKSo7sGBeDmtIyZoyInJbrI/XqQ1ez6SZotOL0e+iT6tzOjBmtMpWWPUVbcdqLbaukREItSDV2aohX+9gBlw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
 </html>

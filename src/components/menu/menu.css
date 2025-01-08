@@ -1,0 +1,98 @@
+@media (min-width: 651px) {
+  .sm-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .sm-none {
+    display: none !important;
+  }
+}
+
+.row-type-menu .section {
+  padding-bottom: 25px;
+}
+.row-type-menu .section:not(:first-of-type) {
+  padding-top: 25px;
+}
+.row-type-menu ul.dishes {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.row-type-menu ul.dishes li.dish {
+  display: flex;
+  justify-content: space-between;
+}
+.row-type-menu ul.dishes li.dish:not(:last-of-type) {
+  margin-bottom: 25px;
+}
+.row-type-menu ul.dishes li.dish div {
+  width: 75%;
+}
+.row-type-menu ul.dishes li.dish .price {
+  margin-top: 0;
+}
+.row-type-menu h2 {
+  padding-bottom: 25px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.row-type-menu h2 span {
+  display: inline-block;
+  height: 1px;
+  background-color: #0F1211;
+  flex-grow: 1;
+  margin-left: 20px;
+}
+.row-type-menu h3 {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 0 !important;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.row-type-menu h3.vg:hover::before, .row-type-menu h3.gf:hover::before, .row-type-menu h3.vg-gf:hover::before {
+  position: absolute;
+  top: -4px;
+  background-color: #6D7275;
+  color: #FBFBFB;
+  padding: 3px 5px;
+  font-size: 12px;
+}
+.row-type-menu h3.vg::after {
+  content: " (VG)";
+}
+.row-type-menu h3.vg:hover::before {
+  content: "Vegan";
+  right: -53px;
+}
+.row-type-menu h3.gf::after {
+  content: " (GF)";
+}
+.row-type-menu h3.gf:hover::before {
+  content: "Gluten free";
+  right: -81px;
+}
+.row-type-menu h3.vg-gf::after {
+  content: " (VG/GF)";
+}
+.row-type-menu h3.vg-gf:hover::before {
+  content: "Vegan & gluten free";
+  right: -131px;
+}
+@media (max-width: 567px) {
+  .row-type-menu h3.vg::before, .row-type-menu h3.gf::before, .row-type-menu h3.vg-gf::before {
+    display: none;
+  }
+}
+.row-type-menu .allergen-key {
+  text-align: right;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.row-type-menu .allergen-key br {
+  margin: 0;
+}/*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,58 @@
+@media (min-width: 651px) {
+  .sm-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .sm-none {
+    display: none !important;
+  }
+}
+
+.row-type-socials .col {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.row-type-socials .col .fa {
+  font-size: 60px;
+  position: relative;
+  z-index: 0;
+  width: 65px;
+  text-align: center;
+  margin: 0 auto;
+}
+.row-type-socials a {
+  filter: brightness(0%);
+  transition: filter 0.3s ease-in-out;
+}
+.row-type-socials a.instagram .fa {
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.row-type-socials a.facebook {
+  color: #0866FF;
+}
+.row-type-socials a.whatsapp {
+  color: #00D757;
+}
+.row-type-socials a.email {
+  color: #BF360C;
+}
+.row-type-socials a:hover {
+  filter: brightness(100%);
+}
+@media (max-width: 650px) {
+  .row-type-socials .row-inner {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .row-type-socials .col {
+    width: 100%;
+  }
+  .row-type-socials .col .fa {
+    width: unset;
+  }
+}/*# sourceMappingURL=socials.css.map */

@@ -1,0 +1,80 @@
+@use 'sass:math';
+
+@import '../../abstracts/mixins/mixins';
+@import '../../abstracts/variables/variables';
+
+
+// .content {
+    .row-type-half-half {
+        .row-inner {
+            display: flex;
+            align-items: center;
+            padding: 0;
+            
+            @include lg {
+                padding-right: 25px;
+            }
+        }
+
+        .content-wrap {
+            padding: $col-gap $side-padding;
+
+            h1, h2 {
+                margin-bottom: $text-padding * 2;
+            }
+
+            a {
+                position: relative;
+                
+                .fa-icon {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                .text {
+                    padding-left: 25px;
+                    box-decoration-break: clone;
+                }
+            }
+        
+            .links {
+                margin-bottom: $text-padding;
+            }
+
+            .opening-times {
+                margin-top: $text-padding * 2;
+
+                br {
+                    margin-bottom: math.div($text-padding, 4);
+                }
+            }
+        }
+
+        .asset {
+            display: flex;
+            filter: grayscale(100%);
+
+            iframe {
+                flex-grow: 1;
+                width: 100%;
+            }
+
+            img {
+                aspect-ratio: 1/1;
+                width: 100%;
+            }
+        }
+
+        @include sm {
+            text-align: center;
+
+            .content-wrap {
+                padding: 0;
+            }
+
+            .asset-wrap {
+                margin-bottom: 0;
+            }
+        }
+    }

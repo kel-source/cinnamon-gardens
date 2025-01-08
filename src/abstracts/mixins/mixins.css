@@ -1,0 +1,11 @@
+@media (min-width: 651px) {
+  .sm-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .sm-none {
+    display: none !important;
+  }
+}/*# sourceMappingURL=mixins.css.map */

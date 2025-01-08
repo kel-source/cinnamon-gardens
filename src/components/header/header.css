@@ -1,0 +1,142 @@
+@media (min-width: 651px) {
+  .sm-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .sm-none {
+    display: none !important;
+  }
+}
+
+nav {
+  height: 95px;
+}
+nav .nav-inner {
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+nav .nav-inner .btn:hover {
+  cursor: auto;
+}
+nav .logo img {
+  width: 75px;
+  height: 75px;
+}
+nav div:not(.opentable-dropdown) {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+nav div:not(.opentable-dropdown) .menu-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+nav div:not(.opentable-dropdown) .menu-item:not(:first-of-type) {
+  margin-left: 15px;
+}
+nav div:not(.opentable-dropdown) .menu-item:not(:last-of-type) {
+  margin-right: 15px;
+}
+nav div:not(.opentable-dropdown) .menu-item.active {
+  position: relative;
+}
+nav div:not(.opentable-dropdown) .menu-item.active::after {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+nav div:not(.opentable-dropdown) .menu-item .button-primary {
+  margin-top: 0;
+}
+nav div:not(.opentable-dropdown) .menu-item .button-primary:hover {
+  background-color: transparent;
+  color: #FBFBFB;
+}
+nav.lg-nav {
+  display: block;
+}
+nav.sm-nav {
+  display: none;
+}
+@media (max-width: 650px) {
+  nav.lg-nav {
+    display: none;
+  }
+  nav.sm-nav {
+    display: flex;
+    padding: 0 25px !important;
+    height: 70px;
+  }
+  nav.sm-nav .logo img {
+    height: 50px;
+    width: 50px;
+  }
+  nav.sm-nav .navbar-toggler {
+    outline: none !important;
+    padding-right: 0 !important;
+  }
+  nav.sm-nav .navbar-toggler .navbar-toggler-icon {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  nav.sm-nav .navbar-collapse {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    height: 0vh;
+    width: 100%;
+    transition: height 1s ease-in-out !important;
+  }
+  nav.sm-nav .navbar-collapse.show {
+    height: 100vh;
+  }
+  nav.sm-nav .navbar-collapse .navbar-nav {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    align-self: flex-start !important;
+    margin-top: 50px;
+  }
+  nav.sm-nav .navbar-collapse .navbar-nav li a {
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+nav .menu-wrap {
+  position: relative;
+}
+nav .menu-wrap .book-now {
+  margin-left: 30px;
+}
+nav .menu-wrap .book-now .btn {
+  background-color: #FBFBFB;
+}
+nav .menu-wrap .opentable-dropdown {
+  position: absolute;
+  top: 95px;
+  right: 0;
+  border: 1px solid #0F1211;
+  border-top: 0;
+  display: none;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  transition-behavior: allow-discrete;
+  z-index: 5 !important;
+}
+nav .menu-wrap .book-now:hover .opentable-dropdown {
+  display: block;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+  transition-behavior: allow-discrete;
+}/*# sourceMappingURL=header.css.map */

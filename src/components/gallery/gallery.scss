@@ -1,0 +1,18 @@
+@use 'sass:math';
+
+@import '../../abstracts/mixins/mixins';
+@import '../../abstracts/variables/variables';
+
+.row-type-gallery {    
+    .col-12 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: $col-gap;
+        padding: 0;
+        margin-left: 0;
+
+        a img {
+            width: 100%;
+        }
+    }
+}

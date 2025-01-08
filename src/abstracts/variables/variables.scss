@@ -1,0 +1,131 @@
+@use 'sass:math';
+
+// WIDTHS
+$sm-width: 650px;
+$lg-width: 1400px;
+
+$sm-up-width: $sm-width + 1px;
+
+// LOADER
+$loading-logo-height: 100px;
+$loading-logo-width: 100px;
+
+// LOGO - values used to calculate header height
+$logo-height: 75px;
+$logo-width: 75px;
+
+$sm-logo-height: math.div($logo-height, 1.5);
+$sm-logo-width: math.div($logo-width, 1.5);
+
+$hamburger-width: 30px;
+$hamburger-height: 30px;
+
+// PADDING
+$col-gap: 20px;
+
+$top-padding: 100px;
+    $half-top-padding: math.div($top-padding, 2);
+$side-padding: 25px;
+
+$top-padding-sm: math.div($top-padding, 2);
+$side-padding-sm: $side-padding;
+
+$col-sm-padding: math.div($top-padding-sm, 2);
+
+$nav-top-padding: 10px;
+$nav-height: $logo-height + ($nav-top-padding * 2);
+
+$sm-nav-height: $sm-logo-height + ($nav-top-padding * 2);
+
+$text-padding: 10px;
+
+// FONT FAMILIES
+$title-font: "Bodoni Moda SC", serif;
+$title-weight: 700;
+
+$body-font: "Open Sans", sans-serif;
+$body-weight: 400;
+
+// @function stripUnits($number) {
+//     @return math.div($number, ($number * 0 + 1));
+// }
+
+// //  Can't get it all to compile properly, the middle calcs aren't calcing in devTools
+// $percentage: math.div(stripUnits($sm-width), 16) * 100 + 0%;
+
+// @function getSize($sm, $lg) {
+//     $fontDiff: $lg - $sm;
+//     $screenDiff: $lg-width - $sm-width;
+
+//     $size: math.div(
+//         calc(
+//             calc($percentage + #{stripUnits($fontDiff)}) * (calc(100vw - #{$sm-width}))
+//         ), 
+//         #{stripUnits($screenDiff)});
+
+//     @return  $size;
+// }
+
+
+// FONTS
+$h1-font: $title-font;
+$h1-weight: $title-weight;
+$h1-line-height: 1em;
+$h1-sm: 10px; // 0.625rem;
+$h1-lg: 32px; // 2rem;
+// $h1: getSize($h1-sm, $h1-lg);
+
+$h2-font: $title-font;
+$h2-weight: $title-weight;
+$h2-line-height: 1em;
+$h2-lg: 24px;
+
+$h3-font: $title-font;
+$h3-weight: $title-weight;
+$h3-line-height: 1em;
+$h3-lg: 18.72px;
+
+$h4-font: $title-font;
+$h4-weight: $title-weight;
+$h4-line-height: 1em;
+$h4-lg: 16px;
+
+$h5-font: $body-font;
+$h5-weight: $body-weight;
+$h5-line-height: 1em;
+$h5-lg: 13.28px;
+
+$h6-font: $h5-font;
+$h6-weight: $h5-weight;
+$h6-line-height: $h5-line-height;
+$h6-lg: $h5-lg;
+
+$intro-font: $body-font;
+$intro-weight: $body-weight;
+$intro-line-height: 1.3em;
+$intro-size: 18px;
+
+$paragraph-font: $body-font;
+$paragraph-weight: $body-weight;
+$paragraph-line-height: 1.4em;
+$paragraph-size: 16px;
+
+$small-font: $body-font;
+$small-weight: $body-weight;
+$small-line-height: 1.4em;
+$small-size: 14px;
+
+$footer-font-size: $small-size;
+
+// COLOURS
+$black: #0F1211;
+$black-opacity: rgba(15, 18, 17, 0.2);
+$mid: #6D7275;
+$white: #FBFBFB;
+
+// BUTTONS
+$button-primary-padding: 10px 15px;
+
+$border-radius: 5px;
+
+$transition: 0.3s ease-in-out;

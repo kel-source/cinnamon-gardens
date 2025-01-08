@@ -1,0 +1,73 @@
+@media (min-width: 651px) {
+  .sm-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .sm-none {
+    display: none !important;
+  }
+}
+
+.row-type-half-half .row-inner {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+@media (min-width: 1400px) {
+  .row-type-half-half .row-inner {
+    padding-right: 25px;
+  }
+}
+.row-type-half-half .content-wrap {
+  padding: 20px 25px;
+}
+.row-type-half-half .content-wrap h1, .row-type-half-half .content-wrap h2 {
+  margin-bottom: 20px;
+}
+.row-type-half-half .content-wrap a {
+  position: relative;
+}
+.row-type-half-half .content-wrap a .fa-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.row-type-half-half .content-wrap a .text {
+  padding-left: 25px;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+}
+.row-type-half-half .content-wrap .links {
+  margin-bottom: 10px;
+}
+.row-type-half-half .content-wrap .opening-times {
+  margin-top: 20px;
+}
+.row-type-half-half .content-wrap .opening-times br {
+  margin-bottom: 2.5px;
+}
+.row-type-half-half .asset {
+  display: flex;
+  filter: grayscale(100%);
+}
+.row-type-half-half .asset iframe {
+  flex-grow: 1;
+  width: 100%;
+}
+.row-type-half-half .asset img {
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+@media (max-width: 650px) {
+  .row-type-half-half {
+    text-align: center;
+  }
+  .row-type-half-half .content-wrap {
+    padding: 0;
+  }
+  .row-type-half-half .asset-wrap {
+    margin-bottom: 0;
+  }
+}/*# sourceMappingURL=half-half.css.map */

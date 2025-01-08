@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>COLOMBO 7 Cinnamon Gardens, "A Taste of Sri Lanka" | Menu</title>
+    <title>Colombo 7 Cinnamon Gardens, "A Taste of Sri Lanka" | Menu</title>
     <meta
       name="description"
-      content="COLOMBO 7 Cinnamon Gardens provides a limited menu of beautifully prepared traditional 
+      content="Colombo 7 Cinnamon Gardens provides a limited menu of beautifully prepared traditional 
       Sri Lankan meals for all ages and many dietary requirements."
     />
+
+    <!-- REMOVE THIS BEFORE COPYING CODE OVER TO MAIN SITE -->
+    <meta name="robots" content="noindex">
+
+    <link rel="icon" type="image/x-icon" href="/media/logo.png">
 
     <link
       rel="stylesheet"
@@ -28,11 +33,15 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Marmelad&family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
-    />
+    /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
 
     <script
       src="https://kit.fontawesome.com/532f39a2cb.js"
@@ -42,16 +51,17 @@
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <header class="fixed-top sm-banner">
-      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <a href="/"
-          ><img src="/media/logo.png" class="navbar-logo" title="Home"
-        /></a>
-        <div class="navbar-title text-center">
-          <h1 class="colombo-7">COLOMBO 7</h1>
-          <h5>Cinnamon Gardens</h5>
-          <h5>"A Taste of Sri Lanka"</h5>
-        </div>
+
+    <!-- loading screen -->
+    <div class="loading-screen">
+      <img class="loading-logo" src="/media/logo.png" />
+    </div>
+
+    <header class="bg-dark">
+      <nav class="sm-nav navbar navbar-expand-lg navbar-light">
+        <a class="logo" href="/"
+        ><img src="/media/logo.png" title="Home"
+      /></a>
         <button
           class="navbar-toggler bg-white"
           type="button"
@@ -66,320 +76,414 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-white" href="/">Home</a>
+              <a class="nav-link" href="/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="/menu"
-                ><strong>Menu</strong></a
-              >
+              <a class="nav-link" href="/menu/index.html">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="/menu#reservation"
-                >Make a reservation</a
-              >
+              <a class="nav-link" href="/contact/index.html">Contact Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="/contact"
-                >Contact Us</a
-              >
+              <a class="nav-link" href="/book-now/index.html">Book Now</a>
             </li>
           </ul>
         </div>
       </nav>
-    </header>
-    <div class="container-fluid">
-      <div class="row no-gutters mb-1 menu-container">
-        <div class="col-md-3"></div>
-        <div class="col-md-6 col-background rounded sm-margin pt-4">
-          <div class="page-contents">
-            <h1 class="page-title">Menu</h1>
-            <hr />
-            <h4 id="short-eats">Short Eats & Bites</h4>
-            <p>
-              <span class="menu-item">Popadom & Chutney (VG/GF)</span>
-              <br />
-              <strong>£5.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Watermelon Acharu (VG/GF)</span>
-              <br />
-              Made with black pepper, chilli, lime & mint
-              <br />
-              <strong>£5.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Vegetable Samosa (VG)</span>
-              <br />
-              With a mint and tamarind chutney, coconut yogurt and pomegranate
-              <br />
-              <strong>£6.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Mutton Rolls</span>
-              <br />
-              Crispy bread crumbed, potato, spicy mutton mix and Lankan ketchup
-              <br />
-              <strong>£7.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Devilled Cauliflower Wings (VG/GF)</span>
-              <br />
-              With capsicum, tomato, ginger and soya
-              <br />
-              <strong>£8.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Hot Butter Squid</span>
-              <br />
-              With a sweet chilli paste, ginger and onion flower stem
-              <br />
-              <strong>£12.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Scallops (GF)</span>
-              <br />
-              In a Thai coconut broth with burnt blood orange
-              <br />
-              <strong>£15.00</strong>
-            </p>
 
-            <hr />
-            <h4 id="mains">Mains</h4>
-            <p>
-              <span class="menu-item">Roast Chicken Curry (GF)</span>
-              <br />
-              Roasted with curry powder, lemongrass, tamarind and coconut milk
-              <br />
-              <strong>£15.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Wild Boar Curry (GF)</span>
-              <br />
-              With roast chilli, mace, cardamon, goraka and pineapple pickle
-              <br />
-              <strong>£18.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Dosa & Wada (VG/GF)</span>
-              <br />
-              A savoury pancake and lentil doughnut with coconut chutney and sambar
-              <br />
-              <strong>£19.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Fried Chicken and Prawn</span>
-              <br />
-              With egg-fried rice, vegetables, crispy shrimp cheeks and oyster sauce
-              <br />
-              <strong>£21.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Jaggery Beef (GF)</span>
-              <br />
-              A slow-cooked brisket with cloves, palm sugar and a rich, spiced tomato sauce
-              <br />
-              <strong>£23.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Jaffna Spiced Lamb Steak</span>
-              <br />
-              With a cheese and mutton kottu roti and chicken gravy
-              <br />
-              <strong>£27.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Roast Cod & Sea Bass Fillet</span>
-              <br />
-              With tempura vegetables and shrimp nest and white crab curry
-              <br />
-              <strong>£29.00</strong>
-            </p>
-
-            <hr />
-            <h4 id="sides">Sides</h4>
-            <p>
-              <span class="menu-item">Asian Aubergine (VG/GF)</span>
-              <br />
-              Fried aubergine with jaggery, mustard and baby shallot
-              <br />
-              <strong>£10.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Cashew Nut & Pea Curry (VG/GF)</span>
-              <br />
-              Made with organic cashews and a creamy coconut sauce
-              <br />
-              <strong>£10.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Green Beans & Jackfruit Seeds (VG/GF)</span>
-              <br />
-              With carrot, tomato, shallots and a coconut reduction
-              <br />
-              <strong>£8.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Beet Root (VG/GF)</span>
-              <br />
-              With organic chickpeas, cavolo nero, orange, dill and coconut milk
-              <br />
-              <strong>£8.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Lankan Cucumber & Courgette (VG/GF)</span>
-              <br />
-              With creamy coconut, mustard, cumin and moringa oil
-              <br />
-              <strong>£8.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Potato Fry (VG/GF)</span>
-              <br />
-              With chilli flakes, sauté onions, curry leaves and black pepper
-              <br />
-              <strong>£7.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Tempered Dhal (VG/GF)</span>
-              <br />
-              Cooked with toasted mustard seeds, turmeric, chilli and garlic oil
-              <br />
-              <strong>£7.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Coconut Yogurt & Bond Raita (VG/GF)</span>
-              <br />
-              With black saltm cucumber, pomegranate and cumin
-              <br />
-              <strong>£5.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Paratha Bread (VG)</span>
-              <br />
-              Brushed with Ghee or vegan butter
-              <br />
-              <strong>£5.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Aromatic Rice (VG/GF)</span>
-              <br />
-              Basmati rice with cinnamon, star anise and cloves
-              <br />
-              <strong>£5.00</strong>
-            </p>
-
-            <hr />
-            <h4 id="desserts">Desserts</h4>
-            <p>
-              <span class="menu-item">Mango sorbet (VG/GF)</span>
-              <br />
-              With a passionfruit coulis
-              <br />
-              <strong>£4.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Coconut Sorbet (GF)</span>
-              <br />
-              With lime zest and topped toasted coconut flakes
-              <br />
-              <strong>£4.00</strong>
-            </p>
-            <p>
-              <span class="menu-item"
-                >Rum & Raisin Ice-Cream (GF)</span
-              >
-              <br />
-              With peanut brittle and a shot of rum
-              <br />
-              <strong>£7.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Coffee Galato (GF)</span>
-              <br />
-              With meringue and a shot of coffee liquor
-              <br />
-              <strong>£7.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Stem Ginger & Honey Ice-Cream with Honeycomb</span>
-              <br />
-              <strong>£7.00</strong>
-            </p>
-            <p>
-              <span class="menu-item">Chocolate & Orange Brownie (GF)</span>
-              <br />
-              With chocolate soil and pistachio ice-cream
-              <br />
-              <strong>£8.00</strong>
-            </p>
-          </div>
-          <br />
-          <p class="text-center">
-            *VG: Vegan, GF: Gluten Free. Please inform us of any allergens when
-            ordering.*
-          </p>
-          <!-- <div id="reservation">
-            <div class="page-contents reservation-inner">
-              <p>Make your next reservation here.</p>
-              <iframe id="inlineFrameExample" title="Inline Frame Example" width="300" height="600" src="https://web.dojo.app/create_booking/vendor/UHrIFF9xR145IwJQrh67Bfpl5cGIaqKbw5rPeJaFVy4_restaurant"> </iframe>
-            </div>
-          </div> -->
-          <div id="reservation">
-            <script
-              type="text/javascript"
-              src="//www.opentable.com/widget/reservation/loader?rid=319557&type=standard&theme=tall&iframe=true&overlay=false&domain=com&lang=en-US"
-            ></script>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="fixed-top d-none d-md-block">
-            <a href="/">
-              <img src="/media/logo.png" class="lg-logo" title="Home"
-            /></a>
-            <div class="lg-navbar">
-              <ul>
-                <li>
-                  <a href="/" class="text-white">Home</a>
-                </li>
-                <li>
-                  <a href="/menu" class="text-white font-weight-bold"
-                    >Menu</a
-                  >
-                </li>
-                <li>
-                  <a href="/contact" class="text-white">
-                    Contact Us</a
-                  >
-                </li>
-              </ul>
-
-              <div class="open-table">
-                <a href="https://www.opentable.co.uk/restaurant/profile/319557/reserve?rid=319557&restref=319557" target="_blank" rel="noopener">
-                  <img height="250px" width="250px" src="https://restaurant.opentable.co.uk/badge/ot/DC2-2024.png">
-                </a>
+      <div class="row-inner no-pd-top no-pd-btm">
+        <div class="col col-12">
+          <nav class="lg-nav">
+            <div class="nav-inner">
+              <div>
+                <a class="logo" href="/"
+                  ><img src="/media/logo.png" title="Home"
+                /></a>
+              </div>
+              <div class="menu-wrap">
+                <a class="menu-item active" href="/menu/index.html">Menu</a>
+                <a class="menu-item" href="/gallery/index.html">Gallery</a>
+                <a class="menu-item" href="/contact/index.html">Contact</a>
+                <div class="menu-item book-now">
+                  <p class="button-primary">Book Now</p>
+                  <div class="opentable-dropdown">
+                    <div id="reservation">
+                      <script
+                        type="text/javascript"
+                        src="//www.opentable.com/widget/reservation/loader?rid=319557&type=standard&theme=tall&iframe=true&overlay=false&domain=com&lang=en-US"
+                      ></script>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="menu-nav d-none d-md-block">
-              <ul>
-                <li>
-                  <a href="#short-eats" class="text-white">
-                    Short Eats & Bites</a
-                  >
-                </li>
-                <li>
-                  <a href="#mains" class="text-white"> Mains </a>
-                </li>
-                <li>
-                  <a href="#sides" class="text-white"> Sides </a>
-                </li>
-                <li>
-                  <a href="#desserts" class="text-white"> Desserts </a>
-                </li>
-              </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="row row-type-page-introduction bg-dark" id="lockOffset">
+        <div class="row-inner">
+          <div class="col col-8">
+            <h1 class="page-title">Menu</h1>
+            <a class="menu-down small" href="#menu">Go to menu <span class="fa fa-icon arrow-down">&#xf063;</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-type-menu-shortcut bg-mid" id="lockingSection">
+        <div class="row-inner">
+          <div class="col col-12">
+            <ul>
+              <li>
+                <a class="button-primary" href="#short-eats">Short Eats & Bites</a>
+              </li>
+              <li>
+                <a class="button-primary" href="#mains">Mains</a>
+              </li>
+              <li>
+                <a class="button-primary" href="#sides">Sides</a>
+              </li>
+              <li>
+                <a class="button-primary" href="#desserts">Desserts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-type-images bg-light">
+        <div class="row-inner no-pd-btm">
+          <div class="col col-4">
+            <img
+              src="/media/client-imgs/home/row-1/dishes.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col col-4">
+            <img
+              src="/media/client-imgs/home/row-1/sprinkle-2.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col col-4">
+            <img
+              src="/media/client-imgs/home/row-3/sorbet.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-type-menu bg-light" id="menu">
+        <div class="row-inner">
+          <div class="col col-12">
+            <div class="menu">
+              <div class="section">
+                <h2 class='h1' id="short-eats">Short Eats & Bites<span></span></h2>
+                <ul class="dishes">
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 vg-gf">Popadom & chutney</h3>
+                    </div>
+                    <p class="price">£5.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 vg">Vegetable samosa</h3>
+                      <p class="description">Mint & tamarind chutney, coconut yogurt, pomegranate</p>
+                    </div>
+                    <p class="price">£7.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 vg-gf">Devilled cauliflower wings</h3>
+                      <p class="description">Capsicum, tomato, finger & soya</p>
+                    </div>
+                    <p class="price">£8.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class='h4'>Mutton rolls</h3>
+                      <p class="description">Crispy bread crumbed, potato, spicy mutton mix & lankan ketchup</p>
+                    </div>
+                    <p class="price">£8.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 gf">Turkey mince & chicken liver</h3>
+                      <p class="description">Sauté onions, green chilli, crispy leeks & cranberry chutney</p>
+                    </div>
+                    <p class="price">£11.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4">Hot butter squid</h3>
+                      <p class="description">Sweet chilli paste, ginger & onion flower stem</p>
+                    </div>
+                    <p class="price">£13.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 gf">Scallops</h3>
+                      <p class="description">Spiced parsnip pure, pear achcharu & crispy pancetta</p>
+                    </div>
+                    <p class="price">£15.00</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="section">
+                <h2 class='h1' id="mains">Mains<span></span></h2>
+                <ul class="dishes">
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 gf">Roast chicken curry</h3>
+                      <p class="description">Roasted curry powder, lemongrass, tamarind, coconut milk</p>
+                    </div>
+                    <p class="price">£15.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 vg-gf">Dosa & wada</h3>
+                      <p class="description">Savoury pancake, coconut chutney & sambar</p>
+                    </div>
+                    <p class="price">£17.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 vg-gf">Jackfruit biriyani</h3>
+                      <p class="description">Saffron rice, fried cashews, dried fruits & coconut raita</p>
+                    </div>
+                    <p class="price">£18.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 gf">Wild boar curry</h3>
+                      <p class="description">Roast chilli, mace, cardamon, goraka & pineapple pickle</p>
+                    </div>
+                    <p class="price">£20.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4">Fried chicken & prawn</h3>
+                      <p class="description">Egg fried rice, vegetables, crispy shrimp cheeks & oyster sauce</p>
+                    </div>
+                    <p class="price">£21.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 gf">Jaggery beef</h3>
+                      <p class="description">Slow cooked brisket, cloves, palm sugar & rich spiced tomatoo sauce</p>
+                    </div>
+                    <p class="price">£23.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4">Jaffna spiced venison steak</h3>
+                      <p class="description">Cheese & mutton kottu roti</p>
+                    </div>
+                    <p class="price">£25.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 gf">Salmon steak</h3>
+                      <p class="description">Crispy lady fingers, mussels & crab curry</p>
+                    </div>
+                    <p class="price">£27.00</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="section">
+                <h2 class='h1' id="sides">Sides<span></span></h2>
+                <ul class="dishes">
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 vg-gf">Asian aubergine</h3>
+                      <p class="description">Fried aubergine, jaggery, mustard, baby shallot</p>
+                    </div>
+                    <p class="price">£10.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 vg-gf">Cashew nut & pea curry</h3>
+                      <p class="description">Organic cashew, creamy coconut sauce</p>
+                    </div>
+                    <p class="price">£10.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 vg-gf">Crown prince pumpkin</h3>
+                      <p class="description">Creamy coconut, mustard, cumin & toasted pumpkin seeds</p>
+                    </div>
+                    <p class="price">£8.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 vg-gf">Exotic mushrooms</h3>
+                      <p class="description">Sauté onion, kale & garlic butter</p>
+                    </div>
+                    <p class="price">£8.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 vg-gf">Potato fry</h3>
+                      <p class="description">Chilli flakes, fried onions, curry leaves & black pepper</p>
+                    </div>
+                    <p class="price">£8.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 vg-gf">Tempered dhal</h3>
+                      <p class="description">Toasted mustard seeds, turmeric, dry chilli & garlic</p>
+                    </div>
+                    <p class="price">£8.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 vg-gf">Brussels sprouts</h3>
+                      <p class="description">Chestnut, apricot, spinach & coconut curry</p>
+                    </div>
+                    <p class="price">£8.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 vg-gf">Coconut yogurt & boondi raita</h3>
+                      <p class="description">Cucumber, pomegranate, cumin</p>
+                    </div>
+                    <p class="price">£5.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 vg">Paratha bread</h3>
+                      <p class="description">Brushed ghee or vegan butter</p>
+                    </div>
+                    <p class="price">£5.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 vg-gf">Aromatic rice</h3>
+                      <p class="description">Basmati rice, cinnamon, star anise and cloves</p>
+                    </div>
+                    <p class="price">£5.00</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="section">
+                <h2 class='h1' id="desserts">Desserts<span></span></h2>
+                <ul class="dishes">
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 vg-gf">Mango sorbet</h3>
+                      <p class="description">Passion fruit coulis and mango boba</p>
+                    </div>
+                    <p class="price">£4.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 vg-gf">Coconut sorbet</h3>
+                      <p class="description">Lime zest and toasted coconut flakes</p>
+                    </div>
+                    <p class="price">£4.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 gf">Gingerbread ice cream</h3>
+                      <p class="description">Honeycomb</p>
+                    </div>
+                    <p class="price">£5.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 gf">Rum and raisin ice cream</h3>
+                      <p class="description">Peanut brittle and shot of rum</p>
+                    </div>
+                    <p class="price">£7.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 gf">Coffee gelato</h3>
+                      <p class="description">Meringue and shot of coffee liquor</p>
+                    </div>
+                    <p class="price">£7.00</p>
+                  </li>
+                  <li class="dish">
+                    <div>
+                      <h3 class="h4 gf">Chocolate orange brownie</h3>
+                      <p class="description">Chocolate soil and pistachio ice cream</p>
+                    </div>
+                    <p class="price">£8.00</p>
+                  </li>
+                </ul>
+              </div>
             </div>
+
+            <p class="allergen-key">
+              VG: Vegan, GF: Gluten free <br>Please inform us of any allergens when
+              ordering.
+            </p>
           </div>
         </div>
       </div>
     </div>
+
+    <footer class="bg-dark">
+      <div class="row-inner footer-inner no-pd-top no-pd-btm">
+        <div class="col col-12">
+          <p>
+            <a 
+              href="https://www.google.com/maps/dir//cinnamon+gardens+amersham/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x487667edf29dbbb3:0x886538049cdc277b?sa=X&ved=1t:3061&ictx=111" 
+              class="address"
+              target="_blank"
+            >
+              <span class="fa fa-icon">&#xf3c5;</span>27 Chesham Rd, Amersham, HP6 5HN
+            </a>
+          </p>
+          <div class="socials">
+            <a
+              href="https://www.facebook.com/Cinnamon-Gardens-100497095289324/"
+              target="_blank"
+              title="Facebook"
+              class="footer-link"
+            >
+              <span class="fa fa-icon">&#xf09a;</span>
+            </a>
+            <a
+              href="https://www.instagram.com/colombo7cg/"
+              target="_blank"
+              title="Instagram"
+              class="footer-link"
+            >
+              <span class="fa fa-icon">&#xf16d;</span>
+            </a>
+            <a
+              href="https://api.whatsapp.com/send?phone=447859820368&fbclid=IwAR0xpRqwca5SmqvrgUYzZoOGUQbS6Cbg0u-9VW7J8-N1ESZ5bcSBFM9123o"
+              target="_blank"
+              title="WhatsApp"
+              class="footer-link"
+            >
+              <span class="fa fa-icon">&#xf232;</span>
+            </a>
+            <a
+              href="mailto:cinnamongardencol7@gmail.com"
+              target="_blank"
+              title="Email"
+              class="footer-link"
+            >
+              <span class="fa fa-icon">&#xf0e0;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/src/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.5.1/SmoothScroll.min.js" integrity="sha512-BkMKSo7sGBeDmtIyZoyInJbrI/XqQ1ez6SZotOL0e+iT6tzOjBmtMpWWPUVbcdqLbaukREItSDV2aohX+9gBlw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
 </html>

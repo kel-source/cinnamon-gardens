@@ -1,0 +1,66 @@
+@media (min-width: 651px) {
+  .sm-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .sm-none {
+    display: none !important;
+  }
+}
+
+.row-type-hero .row-inner:first-of-type {
+  padding-top: 166.6666666667px;
+}
+.row-type-hero .row-inner:last-of-type {
+  padding-top: 0;
+}
+.row-type-hero .row-inner:last-of-type img {
+  margin-bottom: -4vw;
+  aspect-ratio: unset;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 650px) {
+  .row-type-hero .row-inner:last-of-type img {
+    margin-bottom: -10px;
+  }
+}
+@media (min-width: 1400px) {
+  .row-type-hero .row-inner:last-of-type img {
+    margin-bottom: -55px;
+  }
+}
+.row-type-hero h1 {
+  font-size: 100px;
+  text-align: center;
+}
+@media (max-width: 650px) {
+  .row-type-hero h1 {
+    font-size: 50px;
+  }
+}
+.row-type-hero .awards {
+  display: flex;
+  justify-content: center;
+}
+.row-type-hero .awards a, .row-type-hero .awards div {
+  margin: 10px;
+}
+.row-type-hero .awards a img, .row-type-hero .awards div img {
+  width: 125px;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+@media (max-width: 650px) {
+  .row-type-hero .awards a img {
+    width: 75px;
+  }
+}
+@media (max-width: 650px) {
+  .row-type-hero .row-inner:first-of-type {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+}/*# sourceMappingURL=hero.css.map */

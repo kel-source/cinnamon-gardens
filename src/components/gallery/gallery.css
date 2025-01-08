@@ -1,0 +1,22 @@
+@media (min-width: 651px) {
+  .sm-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .sm-none {
+    display: none !important;
+  }
+}
+
+.row-type-gallery .col-12 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  padding: 0;
+  margin-left: 0;
+}
+.row-type-gallery .col-12 a img {
+  width: 100%;
+}/*# sourceMappingURL=gallery.css.map */

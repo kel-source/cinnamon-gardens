@@ -1,0 +1,56 @@
+@use 'sass:math';
+
+@import '../../abstracts/mixins/mixins';
+@import '../../abstracts/variables/variables';
+
+// footer {
+    .footer-inner {
+        .col-12 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        p {
+            margin-top: 4px !important;
+        }
+    }
+
+    .fa-icon {
+        font-size: 20px !important;
+    }
+
+    .address {
+        font-size: $footer-font-size;
+        text-decoration: underline;
+
+        .fa {
+            padding-right: 10px;
+        }
+    }
+
+    .socials {
+        margin-top: 7px;
+
+        a {
+            text-decoration: none;
+
+            &:not(:first-of-type) {
+                margin-left: 6px;
+            }
+            &:not(:last-of-type) {
+                margin-right: 6px;
+            }
+        }
+    }
+
+    @include sm {
+        .footer-inner .col {
+            display: block;
+            text-align: right;
+        }
+
+        .socials {
+            display: none;
+        }
+    }

@@ -1,0 +1,66 @@
+@use 'sass:math';
+
+@import '../../abstracts/mixins/mixins';
+@import '../../abstracts/variables/variables';
+
+.row-type-socials {
+    .col {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .fa {
+            font-size: 60px;
+            position: relative;
+            z-index: 0;
+            width: 65px;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+
+    a {
+        filter: brightness(0%);
+        transition: filter $transition;
+
+        &.instagram {
+            .fa {
+                background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        // colours taken from sites 03.01.25
+        &.facebook {
+            color: #0866FF;
+        }
+
+        &.whatsapp {
+            color: #00D757;
+        }
+
+        &.email {
+            color: #BF360C;
+        }
+
+        &:hover {
+            filter: brightness(100%);
+        }
+    }
+
+    @include sm {
+        .row-inner {
+            padding-top: $top-padding;
+            padding-bottom: $top-padding;
+        }
+
+        .col {
+            width: 100%;
+
+            .fa {
+                width: unset;
+            }
+        }
+    }
+}

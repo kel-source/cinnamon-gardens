@@ -1,0 +1,35 @@
+@media (min-width: 651px) {
+  .sm-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .sm-none {
+    display: none !important;
+  }
+}
+
+.row-type-menu-shortcut .row-inner {
+  padding: 20px 25px;
+}
+.row-type-menu-shortcut .row-inner ul {
+  margin: 0;
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+}
+.row-type-menu-shortcut .row-inner ul li {
+  display: inline;
+}
+.row-type-menu-shortcut .row-inner ul li a {
+  display: inline;
+}
+.row-type-menu-shortcut .row-inner ul li:not(:first-of-type) {
+  padding-left: 10px;
+}
+@media (max-width: 650px) {
+  .row-type-menu-shortcut {
+    display: none;
+  }
+}/*# sourceMappingURL=menu-shortcut.css.map */

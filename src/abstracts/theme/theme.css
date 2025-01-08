@@ -1,0 +1,100 @@
+@media (min-width: 651px) {
+  .sm-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .sm-none {
+    display: none !important;
+  }
+}
+
+header {
+  background-color: #0F1211;
+  color: #FBFBFB;
+}
+header nav a:not(.btn) {
+  color: #FBFBFB;
+}
+header .menu-item.active::after {
+  background-color: #FBFBFB;
+}
+@media (max-width: 650px) {
+  header .sm-nav .navbar-toggler {
+    background-color: transparent !important;
+  }
+  header .sm-nav .navbar-toggler span {
+    background-image: url("/src/components/header/media/hamburger.svg");
+  }
+  header .sm-nav .navbar-collapse {
+    background-color: #6D7275;
+  }
+  header .sm-nav .navbar-collapse .nav-link {
+    color: #FBFBFB !important;
+  }
+}
+
+.bg-light a, .bg-mid a, .bg-dark a {
+  color: inherit;
+}
+.bg-light .button-primary, .bg-mid .button-primary, .bg-dark .button-primary {
+  background-color: transparent;
+}
+
+.bg-light {
+  background-color: #FBFBFB !important;
+  color: #0F1211 !important;
+}
+.bg-light a:not([class])::after {
+  background-color: #0F1211;
+}
+.bg-light a:not([class]):hover {
+  color: #FBFBFB;
+}
+.bg-light .button-primary:hover {
+  border-color: #0F1211;
+  background-color: #0F1211;
+  color: #FBFBFB;
+}
+.bg-light .button-secondary::after {
+  background-color: #0F1211;
+}
+
+.bg-mid {
+  background-color: #6D7275 !important;
+  color: #FBFBFB !important;
+}
+.bg-mid a:not([class])::after {
+  background-color: #FBFBFB;
+}
+.bg-mid a:not([class]):hover {
+  color: #0F1211;
+}
+.bg-mid .button-primary:hover {
+  border-color: #FBFBFB;
+  background-color: #FBFBFB;
+  color: #0F1211;
+}
+.bg-mid .button-secondary::after {
+  background-color: #FBFBFB;
+}
+
+.bg-dark {
+  background-color: #0F1211 !important;
+  color: #FBFBFB !important;
+}
+.bg-dark a:not([class])::after {
+  background-color: #FBFBFB;
+}
+.bg-dark a:not([class]):hover {
+  color: #0F1211;
+}
+.bg-dark .button-primary:hover {
+  border-color: #FBFBFB;
+  background-color: #FBFBFB;
+  color: #0F1211;
+}
+.bg-dark .button-secondary::after {
+  background-color: #FBFBFB;
+}/*# sourceMappingURL=theme.css.map */

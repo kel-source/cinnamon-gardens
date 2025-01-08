@@ -1,0 +1,66 @@
+@use 'sass:math';
+
+@import '../../abstracts/mixins/mixins';
+@import '../../abstracts/variables/variables';
+
+
+.row-type-hero {
+    .row-inner:first-of-type {
+        padding-top: $top-padding + math.div($top-padding, 1.5);
+    }
+
+    .row-inner:last-of-type {
+        padding-top: 0;
+
+        img {
+            margin-bottom: -4vw;
+            aspect-ratio: unset;
+            object-fit: contain;
+
+            @include sm {
+                margin-bottom: -10px;
+            }
+
+            @include lg {
+                margin-bottom: -55px;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 100px;
+        text-align: center;
+
+        @include sm {
+            font-size: 50px;
+        }
+    }
+
+    .awards {
+        display: flex;
+        justify-content: center;
+
+        a, div {
+            margin: 10px;
+
+            img {
+                width: 125px;
+                height: auto;
+                aspect-ratio: 1/1;
+            }
+        }
+
+        @include sm {
+            a img {
+                width: 75px;
+            }
+        }
+    }
+
+    @include sm {
+        .row-inner:first-of-type {
+            padding-top: $top-padding-sm;
+            padding-bottom: math.div($top-padding-sm, 2);
+        }
+    }
+}

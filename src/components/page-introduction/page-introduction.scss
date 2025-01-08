@@ -1,0 +1,72 @@
+@use 'sass:math';
+
+@import '../../abstracts/mixins/mixins';
+@import '../../abstracts/variables/variables';
+
+
+.row-type-page-introduction {
+    .row-inner {
+        position: relative;
+
+        // &::after {
+        //     content: '';
+        //     background-image: url('../../../media/mandala.svg');
+        //     background-size: contain;
+        //     background-repeat: no-repeat;
+        //     position: absolute;
+        //     top: 50%;
+        //     transform: translateY(-50%);
+        //     right: -200px;
+        //     height: 500px;
+        //     width: 500px;
+        // }
+
+        &::after {
+            content: '';
+            background: url('../../../media/panel.svg') repeat-y calc(100% - $side-padding),
+                        url('../../../media/panel.svg') repeat-y calc((100% - (57px * 3.5)) - 7px - $side-padding) 200px;
+            background-size: contain;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            height: 150px * 3.5;
+            width: 100%;
+            z-index: -1;
+        }
+
+        @include sm {
+            &::after {
+                content: '';
+                background: url('../../../media/panel.svg') repeat-y calc(100% - $side-padding);
+                height: 150px * 4.5;
+                right: -($side-padding * 5);
+            }
+        }
+
+        @include lg {
+            &::after {
+                content: '';
+                background: url('../../../media/panel.svg') repeat-y calc(100% - $side-padding),
+                            url('../../../media/panel.svg') repeat-y calc((100% - (57px * 3.5)) - 7px - $side-padding) 200px,
+                            url('../../../media/panel.svg') repeat-y calc((100% - (57px * 7)) - 14px - $side-padding) 325px;
+                height: 150px * 3.5;
+                right: 0;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 75px;
+
+        @include sm {
+            font-size: 50px;
+        }
+    }
+
+    @include sm {
+        h1 {
+            font-size: 50px;
+        }
+    }
+}

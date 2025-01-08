@@ -1,0 +1,399 @@
+@use 'sass:math';
+
+@import 'abstracts/variables/variables';
+@import 'abstracts/mixins/mixins';
+@import 'abstracts/theme/theme';
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: $nav-height + 115px;
+}
+
+html, body {
+    overflow-x: hidden !important;
+}
+
+.loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    background-color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity $transition;
+
+    .loading-logo {
+        width: $loading-logo-width;
+        height: $loading-logo-height;
+        animation: spin 3s linear infinite;
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+body {
+    position: relative;
+    background-color: $white;
+    font-family: $body-font;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    .row {
+        display: flex;
+        justify-content: center;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        z-index: 5;
+
+        @include sm {
+            &:has(.row-inner.no-pd-top) {
+                margin-top: -1px;
+            }
+        }
+
+        &:last-of-type {
+            margin-bottom: -1px;
+        }
+
+        // select .row-inner:not(.row-intro) that has a .row-inner:not(.row-intro) before and a .row-inner:not(.row-intro) after
+        .row-inner:not(.row-intro) ~ :has(~ .row-inner:not(.row-intro)) {
+            &.no-pd-btm.no-pd-top {
+                padding-top: $col-gap !important;
+                padding-bottom: 0 !important;
+            }
+        }
+
+        .row-inner:not(.row-intro) + .row-inner:not(.row-intro) {
+            &:last-of-type {
+                padding-top: $col-gap !important;
+            }
+        }
+    }
+
+    .row-inner {
+        width: 100%;
+        max-width: $lg-width;
+        padding: $top-padding $side-padding;
+        display: flex;
+        justify-content: space-between;
+
+        &:not(.row-intro) {
+            h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+                margin-bottom: $text-padding;
+            }
+        }
+
+        &.no-pd-top {
+            padding-top: 0 !important;
+        }
+        &.half-pd-top {
+            padding-top: $half-top-padding !important;
+        }
+
+        &.no-pd-btm {
+            padding-bottom: 0 !important;
+        }
+        &.half-pd-btm {
+            padding-bottom: $half-top-padding !important;
+        }
+    }
+
+    .row-intro {
+        padding-bottom: 0 !important;
+
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 0;
+
+            & + h1, & + h2, & + h3, & + h4, & + h5, & + h6, & + p {
+                margin-top: $text-padding;
+            }
+        }
+
+        & + .row-inner {
+            padding-top: $col-gap !important;
+
+            @include sm {
+                padding-top: math.div($top-padding-sm, 4) !important;
+            }
+        }
+    }
+
+    .row-inner {
+        column-gap: $col-gap;
+        margin: 0 auto;
+    }
+
+    .col {
+        break-inside: avoid-column; /* Prevent element from breaking */
+        page-break-inside: avoid; /* Prevent element from breaking in Firefox */
+        padding-left: 0;
+        padding-right: 0;
+        flex: unset !important;
+    }
+
+    h1, .h1 {
+        font-family: $h1-font;
+        font-weight: $h1-weight;
+        line-height: $h1-line-height;
+        font-size: $h1-lg;
+    }
+    h2, .h2 {
+        font-family: $h2-font;
+        font-weight: $h2-weight;
+        line-height: $h2-line-height;
+        font-size: $h2-lg;
+    }
+    h3, .h3 {
+        font-family: $h3-font;
+        font-weight: $h3-weight;
+        line-height: $h3-line-height;
+        font-size: $h3-lg;
+    }
+    h4, .h4 {
+        font-family: $h4-font;
+        font-weight: $h4-weight;
+        line-height: $h4-line-height;
+        font-size: $h4-lg;
+    }
+    h5, .h5 {
+        font-family: $h5-font;
+        font-weight: $h5-weight;
+        line-height: $h5-line-height;
+        font-size: $h5-lg;
+    }
+    h6, .h6 {
+        font-family: $h6-font;
+        font-weight: $h6-weight;
+        line-height: $h6-line-height;
+        font-size: $h6-lg;
+    }
+
+    .intro {
+        font-family: $intro-font;
+        font-weight: $intro-weight;
+        line-height: $intro-line-height;
+        font-size: $intro-size;
+    }
+
+    p, ul, ol, li, .button-primary, .button-secondary {
+        font-family: $paragraph-font;
+        font-weight: $paragraph-weight;
+        line-height: $paragraph-line-height;
+        font-size: $paragraph-size;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    p, ul, ol {
+        margin: $text-padding 0;
+
+        ul, ol {
+            margin: 0;
+        }
+    }
+
+    a {
+        transition: color $transition;
+        text-decoration: none !important;
+        position: relative;
+        z-index: 1;
+
+        &:not([class]) {
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 2px;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                transition: height $transition, color $transition;
+                z-index: -1;
+            }
+
+            &:hover::after {
+                height: calc(100% - 3px);
+            }
+        }
+
+        &.menu-down {
+            span.arrow-down {
+                position: absolute;
+                top: 50%;
+                right: -17px;
+                transform: translateY(-50%);
+                transition: top $transition;
+            }
+        }
+
+        &.menu-down:hover {
+            span.arrow-down {
+                top: calc(50% + 4px);
+            }
+        }
+    }
+
+    .button-primary {
+        padding: $button-primary-padding;
+        border: 2px solid;
+        border-radius: $border-radius;
+        display: block;
+        width: fit-content;
+        height: fit-content;
+        margin: $text-padding 0;
+        transition: border-color $transition, background-color $transition, color $transition;
+    }
+
+    .button-secondary {
+        position: relative;
+        margin: $text-padding 0;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 2px;
+            transition: width $transition;
+        }
+
+        &:hover::after {
+            width: calc(100% + 7px);
+        }
+    }
+
+    .fa-icon {
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    br {
+        content: " ";
+        display: block;
+        margin-bottom: $text-padding;
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        aspect-ratio: 3/4;
+
+        &.square {
+            aspect-ratio: 1/1;
+        }
+
+        &.landscape {
+            aspect-ratio: 16/9;
+        }
+    }
+
+    a.logo img {
+        object-fit: contain !important;
+    }
+
+    @include sm {
+        .row:not(.row-type-banner) {
+            .row-inner {
+                display: block !important;
+                padding: $top-padding-sm $side-padding-sm;
+            }
+        }
+
+        .col {
+            width: 100%;
+            max-width: 100%;
+            padding: 0;
+            
+            &:not(:last-of-type) {
+                margin-bottom: $col-gap;
+            }
+        }
+
+        .col-blank {
+            display: none;
+        }
+    }
+}
+
+header, body, .content, footer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    z-index: 11;
+
+    @import 'components/header/header';
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding-top: $nav-height;
+    flex: 1;
+
+    @import 'components/hero/hero';
+    @import 'components/page-introduction/page-introduction';
+    @import 'components/award-banner/award-banner';
+    @import 'components/images/images';
+    @import 'components/half-half/half-half';
+    @import 'components/menu-shortcut/menu-shortcut';
+    @import 'components/menu/menu';
+    @import 'components/socials/socials';
+    @import 'components/gallery/gallery';
+
+    .row-type-callout, .row-type-projects {
+        .text-wrap {
+            margin-top: calc($col-gap - 5px);
+        }
+    }
+
+    @include sm {
+        padding-top: $sm-nav-height !important;
+    }
+
+    // for .row-type-menu-shortcut
+    .locked {
+        position: fixed;
+        top: $nav-height;
+        width: 100%;
+        z-index: 6;
+    }
+
+    .row-type-page-introduction.booking-page, .row-type-booking-widget {
+        .col-8, .col-12 {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #reservation iframe {
+            border: 1px solid $black;
+        }
+    }
+}
+
+// specific to .row-type-gallery fullscreen ability
+[title="Enter fullscreen"] {
+    display: none !important;
+}
+
+footer {
+    z-index: 1;
+    margin-top: auto;
+    padding-top: $nav-top-padding;
+    padding-bottom: $nav-top-padding;
+
+    @import 'components/footer/footer';
+}
