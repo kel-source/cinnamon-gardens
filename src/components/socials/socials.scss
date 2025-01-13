@@ -57,9 +57,21 @@
 
         .col {
             width: 100%;
+            justify-content: center;
+
+            a {
+                &:not(:first-of-type) {
+                    padding-left: 20px;
+                }
+
+                &:not(:last-of-type) {
+                    padding-right: 20px;
+                }
+            }
 
             .fa {
                 width: unset;
+                font-size: 40px;
             }
         }
     }

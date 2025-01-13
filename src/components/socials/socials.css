@@ -51,8 +51,16 @@
   }
   .row-type-socials .col {
     width: 100%;
+    justify-content: center;
+  }
+  .row-type-socials .col a:not(:first-of-type) {
+    padding-left: 20px;
+  }
+  .row-type-socials .col a:not(:last-of-type) {
+    padding-right: 20px;
   }
   .row-type-socials .col .fa {
     width: unset;
+    font-size: 40px;
   }
 }/*# sourceMappingURL=socials.css.map */
